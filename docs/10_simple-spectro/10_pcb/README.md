@@ -21,7 +21,7 @@ that we buy on [Mouser website](http://www.mouser.com).
 The board is rather straighforward. The resistors values for the LEDs may however have to be tuned depending on the LEDs you are using.
 If the value is too weak, the detector may saturate and you will get a message 'OVER'. It will also blink just once instead of 10 times.
 
-- [Soldering the PCD](solder/README.md)
-- [Calibration of LEDs](calibration/README.md)
-- [Power and battery](power/README.md)
-- [Debug](voltages/README.md)
+- [Soldering the PCD](10_solder/README.md)
+- [Calibration of LEDs](20_calibration/README.md)
+- [Power and battery](30_power/README.md)
+- [Debug](40_voltages/README.md)
