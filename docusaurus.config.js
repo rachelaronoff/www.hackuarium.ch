@@ -14,7 +14,16 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
     favicon: "img/favicon.ico",
     organizationName: "hackuarium", // Usually your GitHub org/user name.
     projectName: "docs.hackuarium.org", // Usually your repo name.
-
+    plugins: [
+      [
+        require.resolve("@easyops-cn/docusaurus-search-local"),
+        {
+          hashed: true,
+          //docsRouteBasePath: "/eln",
+          // indexPages: true, //because of bug: https://github.com/easyops-cn/docusaurus-search-local/issues/42
+        },
+      ],
+    ],
     presets: [
       [
         "@docusaurus/preset-classic",
