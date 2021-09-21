@@ -5,6 +5,7 @@ import styles from "./HomepageFeatures.module.css";
 const FeatureList = [
   {
     title: "Simple spectro",
+    link: "/docs/spectro",
     Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
@@ -15,6 +16,7 @@ const FeatureList = [
   },
   {
     title: "Incubator",
+    link: "/docs/incubator",
     Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
@@ -25,6 +27,7 @@ const FeatureList = [
   },
   {
     title: "Bioreactor",
+    link: "/docs/bioreactor",
     Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
@@ -35,6 +38,7 @@ const FeatureList = [
   },
   {
     title: "pH meter",
+    link: "/docs/phmeter",
     Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>Measure conductimetry and pH using this I2C connectable pH meter.</>
@@ -42,9 +46,15 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, link }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div
+      onClick={(e) => {
+        window.location = link;
+      }}
+      style={{ cursor: "pointer" }}
+      className={clsx("col col--4")}
+    >
       <div className="text--center">
         <Svg className={styles.featureSvg} alt={title} />
       </div>

@@ -1,0 +1,5 @@
+---
+slug: /spectro
+---
+
+# An introduction
