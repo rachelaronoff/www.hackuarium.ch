@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 (
   module.exports = {
     title: "Hackuarium open-hardware documentation",
-    tagline: "Open laboratory for DIY biology",
+    tagline: "Hackuarium: Open laboratory for DIY biology and more",
     url: "https://docs.hackuarium.org",
     baseUrl: "/",
     onBrokenLinks: "throw",
