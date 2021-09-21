@@ -2,8 +2,8 @@ The open source Bioreactor
 
 # Making the bioreactor
 
-- [Bill of material](making/bom)
-- [Assembling your bioreactor](making/assembling)
+- [Bill of material](making/bom/index.md)
+- [Assembling your bioreactor](making/assembling/index.md)
 - [Temperature probe](making/onewire/index.md)
 - [Heating plate and PID](making/pid/index.md)
 - [pin mapping](making/pinMapping.md)
@@ -17,7 +17,7 @@ The open source Bioreactor
 
 # Programming with the Arduino
 
-- [General information](arduino)
+- [General information](arduino/index.md)
 - [The parameters](arduino/parameters.md)
 
 # Debugging the bioreactor
