@@ -15,6 +15,12 @@ const FeatureList = [
     ),
   },
   {
+    title: "Beemos",
+    link: "/docs/beemos",
+    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    description: <>Monitor bee hives</>,
+  },
+  {
     title: "Incubator",
     link: "/docs/incubator",
     Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
