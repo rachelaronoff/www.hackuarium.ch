@@ -22,4 +22,4 @@ The device is rather cheap, for you can buy all the components on AliExpress
 per spectrophotometer is around $30. However if you want to have a final
 product with an aluminium case and PCBs already assembled, the cost would rather be $90 each if you order 20 of them.
 
-<img src='intro.jpg' width='600px' />
+![spectro.jpg](spectro.jpg)
