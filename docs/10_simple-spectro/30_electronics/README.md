@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # The PCB
 
 The electronic design is compatible with the Arduino platform. We use an
