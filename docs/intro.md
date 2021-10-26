@@ -2,34 +2,8 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Hackuarium documentation
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Welcome to this site, which contains all the documentation of a few of the projects led at the Hackuarium bio-hacking space in Écublens, Switzerland. You can navigate in the sidebar on the left part of your screen to see the doc written for our projects.
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+![intro-pic.JPG](intro-pic.JPG)
