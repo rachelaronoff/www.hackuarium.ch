@@ -1,4 +1,4 @@
-# Values used to plot the graph
+# Values used to plot the first graph
 
 | Absorbance   | R     | G     | B     |
 | ------------ | ----- | ----- | ----- |
