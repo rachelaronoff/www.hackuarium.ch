@@ -1,12 +1,12 @@
 # The case
 
-The case is done using FreeCAD and OpenSCAD. These applications looks rather complex at a first glance but have the huge advantage that all the parameters may be set in an internal spreadsheet. This allows to design parametric boxes that can be easily changed and updated.
+The case was designed using FreeCAD and OpenSCAD. These programs look rather complex at a first glance but have the huge advantage that all the parameters may be set in an internal spreadsheet. This allows to design parametric values that can be easily changed and updated.
 
-Currently we have 3 versions of the box:
+Currently we have 3 versions of the case:
 
 - The open-box can be easily opened to understand the way it works.
 - A box that is designed to be cut using a laser cutter in 3mm MDF or acrylic glass.
-- The closed-box is designed to be screwed and possibly done by aluminium milling (it can also be 3D-printed).
+- The closed-box is designed for the top and bottom parts to be screwed. It can be made by aluminium milling (it can also be 3D-printed).
 
 ## Assembling the closed box
 
@@ -20,7 +20,7 @@ The PCB is fixed using nylon standoff spacers (16mm - 10mm M3). Nylon has the ad
 
 ![build3.jpg](build3.jpg)
 
-A piece of 3mm thick foam is placed between the potentiometer and the battery to prevent damage. ThisIndeed, problems were encountered beforehand under heavy shaking in an incubator.
+A piece of 3mm thick foam is placed between the potentiometer and the battery to prevent damage. Indeed, problems were encountered beforehand under heavy shaking in an incubator.
 
 ![build4.jpg](build4.jpg)
 
