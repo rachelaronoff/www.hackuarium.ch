@@ -1,5 +1,9 @@
 # Expected voltages for USB powered without battery
 
+:::note
+Power the spectrophotometer with a USB cable and be sure that the battery is not connected. Underneath, we list voltages that you should be able to measure at different points using a voltmeter.
+:::
+
 Test points are indicated on the eagle file. They allow you to look for a flaw in your solders. To test, measure the voltage between a test point and the ground. These are roughly the values that wou should get:
 
 - A: 5.01v
