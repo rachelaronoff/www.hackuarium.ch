@@ -1,4 +1,6 @@
-# Escherichia coli
+# Applications in biology
+
+## Escherichia coli
 
 An important feature of the simple-spectrophotometer is that it is battery-powered (autonomy of 48 hours). Consequently, you can measure a kinetic by placing the device directly inside an incubator.
 
@@ -15,7 +17,7 @@ This experiment clearly shows the log phase and the stationary phase. But
 the growth was faster than expected. An acquisition every 15 minutes
 would have been a better choice.
 
-# Rhizobium and bioluminescent bacteria Vibrio fischeri
+## Rhizobium and bioluminescent bacteria Vibrio fischeri
 
 We tried to measure the growth of other bacteria, such as Rhizobium and Vibrio fischeri. We placed the simple-spectrophotometer on a shaker (inclined), at room temperature.
 
@@ -29,7 +31,7 @@ We tried to measure the growth of other bacteria, such as Rhizobium and Vibrio f
 
 ![vibrio_fischeri_culture.jpg](vibrio_fischeri_culture.jpg)
 
-# Effect of the temperature on the growth of Vibrio Fischeri
+## Effect of the temperature on the growth of Vibrio Fischeri
 
 Using the simple spectrophotometer, we tried to highlight the effect of the temperature on the growth of Vibrio Fischeri. In order to study that, we put the same dispositive than above in an incubator, where the temperature has been monitored. We did 2 cultures, one at 30°C, and one at 38°C. At a higher temperature, we expect a faster growth of the bacteria. For both cultures, we used only the media as blank, and then we took one measure every 15 minutes, for 14 hours and 30 minutes. We obtained these results:
 

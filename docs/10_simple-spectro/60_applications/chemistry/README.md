@@ -1,4 +1,6 @@
-# Patent blue V
+# A few examples
+
+## Patent blue V
 
 To begin we did a very simple experiment that allows to measure the
 absorbance of solutions containing different known concentrations of
@@ -14,7 +16,7 @@ You may check the following protocols
 
 - [blue-patent-v](blue-patent-v/README.md)
 
-# Fluorescence quenching
+## Fluorescence quenching
 
 In order to determine if the spectrophotometer is able to measure the difference of UV absorbance in a fluorescence quenching situation, we used fluorescein and potassium iodide (KI) as a quencher.
 
@@ -22,47 +24,39 @@ To do it, we started with a solution of KI 0.01M that was diluted to obtain solu
 
 Here are the results:
 
-#### KI 0.01M:
+### KI 0.01M:
 
 |               | MEAN | SD    |
 | ------------- | ---- | ----- |
 | UV absorbance | 0,44 | 0,021 |
 
-#
-
-#### KI 0.005M:
+### KI 0.005M:
 
 |               | MEAN  | SD    |
 | ------------- | ----- | ----- |
 | UV absorbance | 0,392 | 0,019 |
 
-#
-
-#### KI 0.001M:
+### KI 0.001M:
 
 |               | MEAN  | SD    |
 | ------------- | ----- | ----- |
 | UV absorbance | 0,232 | 0,022 |
 
-#
-
-#### KI 0.0005M:
+### KI 0.0005M:
 
 |               | MEAN  | SD    |
 | ------------- | ----- | ----- |
 | UV absorbance | 0,118 | 0,018 |
 
-#
-
-#### KI 0.0001M:
+### KI 0.0001M:
 
 |               | MEAN  | SD    |
 | ------------- | ----- | ----- |
 | UV absorbance | 0,084 | 0,011 |
 
-#
+### Original data
 
-If you want to check all our measures, please click on the following link:
+If you want to see all our measurements, please click on the following link:
 
 - [fluorescence quenching values](fluorescence-quenching-values/README.md)
 
