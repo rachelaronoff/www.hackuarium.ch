@@ -63,37 +63,16 @@ The results are shown for the colors specified in `Settings -> Result color`.
 
 ### 5. Settings
 
-#### 5.1 Before delay
-
-Delay before blank.
-
-#### 5.2 First delay
-
-Delay before first experiment (for kinetics).
-
-#### 5.3 Inter experiment delay
-
-Delay between experiments (for kinetics).
-
-#### 5.4 Number of experiments
-
-Number of experiments that are going to be made during a kinetic.
-
-#### 5.5 Result color
-
-What data is shown in the results. You can choose to show the absorbance in R, G, B or UV (combination of these). The values shown are defined by a number between 0 and 63.
-
-#### 5.6 Rotary mode
-
-Invert the rotation of the button.
-
-#### 5.7 Active leds
-
-What LEDs are going to blink when doing the experiments.
-
-#### 5.8 Main menu
-
-Go back to main menu.
+| Setting                | Description                                                                                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Before delay           | Delay before blank.                                                                                                                                                          |
+| First delay            | Delay before first experiment (for kinetics).                                                                                                                                |
+| Inter experiment delay | Delay between experiments (for kinetics).                                                                                                                                    |
+| Number of experiments  | Number of experiments that are going to be made during a kinetic.                                                                                                            |
+| Result color           | What data is shown in the results. You can choose to show the absorbance in R, G, B or UV (combination of these). The values shown are defined by a number between 0 and 63. |
+| Rotary mode            | Invert the rotation of the button.                                                                                                                                           |
+| Active leds            | What LEDs are going to blink when doing the experiments.                                                                                                                     |
+| Main menu              | Go back to main menu.                                                                                                                                                        |
 
 ### 6. Status
 

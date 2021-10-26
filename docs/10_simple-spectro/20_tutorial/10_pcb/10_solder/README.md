@@ -4,7 +4,9 @@ The PCB comes presoldered with all the surface mounted components.
 
 However, all the through hole components have to be soldered by hand.
 
-Please take care about the face on which you need to solder the components!!!!
+:::caution
+Please take care about the face on which you need to solder the components!
+:::
 
 The goal is to reach this final result:
 

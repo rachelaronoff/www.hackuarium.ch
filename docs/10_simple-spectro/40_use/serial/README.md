@@ -1,12 +1,16 @@
-# Accessing the spectro from USB
+# Accessing the spectro through USB
 
-## Connect to the spectro
+## Connecting to the spectro
 
-It is possible to control the device from the Serial over USB. You may use for example
-the command `screen` in a bash, but the easiest is probably to use the Arduino program.
-Indeed the spectrophotometer appears as a 'Lilipad Arduino USB'. It is critical to chose the right board to program. Indeed the spectro contains an Atmega 32U4 at 8MHz.
+It is possible to control the device from the Serial over USB. You could use for example
+the command `screen` in a bash if you're used to it, but the easiest is probably to use the "Serial Monitor" of the Arduino program.
+Indeed the spectrophotometer appears as a "Lilipad Arduino USB" and you can just select it and access the data.
 
-### To acess the data from the Arduino platform
+:::caution
+When using the Arduino program, it is critical to choose the right board ("Lilipad Arduino USB") when programming it. Indeed the spectro contains an Atmega 32U4 at 8MHz. If it is programmed at a different frequency, the firmware will be corrupted and you will not be able to program the spectrophotometer again.
+:::
+
+### Accessing data from the Arduino program
 
 1. Install the Arduino IDE software
 2. Select 'Tools -> Board -> Lilypad Arduino USB'
