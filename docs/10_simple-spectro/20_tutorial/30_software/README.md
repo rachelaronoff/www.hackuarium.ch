@@ -1,4 +1,8 @@
-# The software
+# Uploading the software
+
+:::info
+This step is generally optional, because we have already uploaded the software on the PCBs in the kits. If it's the case, just skip this section.
+:::
 
 Once you finished soldering the PCB you need to burn the bootloader. This step enables the control of the device over USB.
 

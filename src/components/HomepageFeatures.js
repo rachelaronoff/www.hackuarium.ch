@@ -6,10 +6,10 @@ const FeatureList = [
   {
     title: "Simple spectro",
     link: "/docs/spectro",
-    Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
+    Svg: require("../../static/img/logo-spectro.svg").default,
     description: (
       <>
-        An affordable spectro photometer that allows to measure precisely the
+        An affordable spectrophotometer that allows to measure precisely the
         absorbance in red, green and blue.
       </>
     ),
