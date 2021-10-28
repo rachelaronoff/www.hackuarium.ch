@@ -14,7 +14,7 @@ adding various volumes (0 to 2 mL) of a concentrated solution with a 1mL seringe
 
 You may check the following protocols
 
-- [blue-patent-v](blue-patent-v/README.md)
+- [blue-patent-v](lab-notebook/blue-patent-v/README.md)
 
 ## Fluorescence quenching
 
@@ -58,7 +58,7 @@ Here are the results:
 
 If you want to see all our measurements, please click on the following link:
 
-- [fluorescence quenching values](fluorescence-quenching-values/README.md)
+- [fluorescence quenching values](lab-notebook/fluorescence-quenching-values/README.md)
 
 # Detection of mercury water pollution using carbon quantum dots
 
@@ -97,7 +97,7 @@ The interesting part of this application is that the CQDs react differently with
 
 To use the CQDs, you will have to dilute them (for more precise quantities, please wait, work in progress...!)
 
-- [CQDs-attempts](cqds-attempts/README.md)
+- [CQDs-attempts](lab-notebook/cqds-attempts/README.md)
 
 ## Test of fluorescence
 
@@ -146,7 +146,7 @@ The R squared is equal to 0.958.
 
 You can find all the values here:
 
-- [CQDs-values](cqds-values/README.md)
+- [CQDs-values](lab-notebook/cqds-values/README.md)
 
 # Determination of the pH using red cabbage
 
@@ -166,4 +166,4 @@ The color of the red cabbage highly depends on the pH of a solution. We are tryi
 
 We are trying to create a precise procedure to use it, for the moment you can see the results of our attempts:
 
-- [pH-determination-attempts](pH-attempts/README.md)
+- [pH-determination-attempts](lab-notebook/pH-attempts/README.md)

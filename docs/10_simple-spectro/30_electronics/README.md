@@ -29,4 +29,4 @@ If the value is too weak, the detector may saturate and you will get a message '
 - [Power and battery](30_power/README.md)
 - [Debug](40_voltages/README.md)
 
-The description on how to solder the board is in the tutorial: [Soldering the PCD](10_solder/README.md).
+The description on how to solder the board is in the tutorial: [Soldering the PCD](../20_tutorial/10_pcb/README.md).
