@@ -12,25 +12,3 @@ Our goal was to create a simple bioreactor that measures and controls temperatur
 The initial idea was that you could use bioreactors without
 having to buy an expensive instrument. The device is rather cheap, for you can buy all the components on AliExpress
 (but one) and either 3D print or laser cut the case (MDF or acrylic glass). When constructing 10, the price per bioreactor is around $30. However, if you want to have a final product with an aluminium case and PCBs already assembled, the cost would rather be $90 each if you order 20 of them.
-
-## Making the bioreactor
-
-- [Bill of material](making/bom/index.md)
-- [Assembling your bioreactor](making/assembling/index.md)
-- [Temperature probe](making/onewire/index.md)
-- [Heating plate and PID](making/pid/index.md)
-- [pin mapping](making/pinMapping.md)
-- [Loading cells (weight)](making/weight/index.md)
-
-## Userguide of the bioreactor
-
-- [Getting started](using/gettingStarted.md)
-- [List of qualifiers](using/qualifiers.md)
-- [FAQ](using/faq.md)
-
-## Programming with the Arduino
-
-- [General information](arduino/index.md)
-- [The parameters](arduino/parameters.md)
-
-## Debugging the bioreactor
