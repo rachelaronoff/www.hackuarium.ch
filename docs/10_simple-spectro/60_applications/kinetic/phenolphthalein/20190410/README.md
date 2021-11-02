@@ -45,7 +45,7 @@ An exponential regression has been applied for the 4 experiments for all the poi
 
 ## NaOH regression
 
-<img src="NaOHregression.svg">
+<img src="NaOHregression.svg" />
 
 - y = −0.03705 + 1.069 x
 - r<sup>2</sup> = 0.9983

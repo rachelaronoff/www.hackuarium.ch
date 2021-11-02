@@ -103,7 +103,7 @@ D : H2O
 
 Kinetic at 23°C shows a fast reaction (5 minutes) followed by a much slower reaction.
 
-<img src="AcOH.svg">
+<img src="AcOH.svg" />
 
 ## Kinetic trial with H2SO4
 
@@ -118,4 +118,4 @@ D : H2O
 
 In presence of H2SO4 the reaction is much faster.
 
-<img src="H2SO4.svg">
+<img src="H2SO4.svg" />
