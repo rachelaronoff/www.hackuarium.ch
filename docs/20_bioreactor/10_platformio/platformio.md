@@ -42,7 +42,8 @@ If you do any mistake and try flashing the bioreactor board as if it was a norma
 
 ## Using USBtiny
 
-By default the last version of Fedora will only give you a USB readonly access and will prevent you from burning the board loader.
+By default the last version of Fedora will only give you a USB readonly access and will prevent you from burning the bootloader.
+
 In order for the USBTiny to have r/w access you should add a USB rule:
 
 ```bash
@@ -55,23 +56,36 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="1781", ATTRS{idProduct}=="0c9f", GROUP="plu
 
 ## Libraries
 
-In this project, we use many non standard libraries. By default the Arduino IDE
-will look for them in `~/Arduino/libraries`
+In this project, we use many non standard libraries. By default PlatformIO IDE
+will look for them in `<Project>/include`.
 
 If you are using only our project it is easier to directly point this folder
 to the libraries that are present in the github.
 
-```
-mkdir ~/Arduino/
-ln -s ~/git/bioreactor/Bioreactor_v4/Arduino/libraries/ ~/Arduino/
+```bash
+$: mkdir ~/libraries/
+$: ln -s ~/git/hackuarium/bioreactor-platformio/BioMain/include/hack/libraries/ ~/libraries/
 ```
 
 Warning: Time library update v1.5.0 change committed in BioMain including TimeLib.h instead of Time.h resolves bugs on OSX
 
 ## That's it
 
-You should now be able to compile the project from the Arduino IDE.
-You can now proceed with burning the bootloader using the Leonardo 8MHz newly created option and upload your code selecting the same Leonardo 8MHz in the list of available MCUs from the IDE. To do so, you must select the Leonardo 8MHz board under /Tools/Boards/ in the Arduino IDE or select the proper device during project creation in Eclipse. Note that the LCD board works with 16MHz/5V and must be flashed as a standard Leonardo board not a 8MHz one. You must also select the right board version when programming the board via USB !
+You should now be able to compile the project from PlatformIO IDE.
+
+You can now proceed with burning the bootloader using the `program_via_USBtinyISP` environment created in `platformio.ini` file. Go to `platformIO Terminal` and type:
+
+```bash
+$: pio run -e program_via_USBtinyISP --target bootloader
+```
+
+Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button:
+
+![Upload option](upload.png)
+
+You can check upload success in the same terminal:
+
+![Upload success](upload-success.png)
 
 # The parameters
 
