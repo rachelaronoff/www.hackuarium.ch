@@ -70,19 +70,20 @@ The `PARAM_ENABLED (Z)` will allow to activate or deactivate some function of th
 `PARAM_STATUS` will display the currently active functionalities. It is composed of different bits that can
 be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
 
-| BIT | PARAM_STATUS         | COMMENT                                                          |
-| --- | -------------------- | ---------------------------------------------------------------- |
-| 0   | FLAG_PID_CONTROL     | enable/disable heating                                           |
-| 1   | FLAG_STEPPER_CONTROL | enable/disable agitation control                                 |
-| 2   | FLAG_FOOD_CONTROL    | enable/disable food control                                      |
-| 3   | FLAG_PH_CONTROL      | enable/disable pH control                                        |
-| 4   | FLAG_GAS_CONTROL     | enable/disable gas control                                       |
-| 5   | FLAG_SEDIMENTATION   | enable/disable sedimentation (one of the phases of food control) |
-| 6   | FLAG_RELAY_FILLING   | enable/disable filling pump (one of the phases of food control)  |
-| 7   | FLAG_RELAY_EMPTYING  | enable/disable emptying pump (one of the phases of food control) |
-| 8   | FLAG_PH_CALIBRATE    | enable/disable pH calibration                                    |
-| 9   | FLAG_RELAY_ACID      | enable/disable acid addition                                     |
-| 10  | FLAG_RELAY_BASE      | enable/disable base addition                                     |
+| BIT | PARAM_STATUS            | COMMENT                                                          |
+| --- | ----------------------- | ---------------------------------------------------------------- |
+| 0   | FLAG_PID_CONTROL        | enable/disable heating                                           |
+| 1   | FLAG_STEPPER_CONTROL    | enable/disable agitation control                                 |
+| 2   | FLAG_FOOD_CONTROL       | enable/disable food control                                      |
+| 3   | FLAG_PH_CONTROL         | enable/disable pH control                                        |
+| 4   | FLAG_GAS_CONTROL        | enable/disable gas control                                       |
+| 5   | FLAG_SEDIMENTATION      | enable/disable sedimentation (one of the phases of food control) |
+| 6   | FLAG_RELAY_FILLING      | enable/disable filling pump (one of the phases of food control)  |
+| 7   | FLAG_RELAY_EMPTYING     | enable/disable emptying pump (one of the phases of food control) |
+| 8   | FLAG_PH_CALIBRATE       | enable/disable pH calibration                                    |
+| 9   | FLAG_RELAY_ACID         | enable/disable acid addition                                     |
+| 10  | FLAG_RELAY_BASE         | enable/disable base addition                                     |
+| 11  | FLAG_WAITING_TIME_HOURS | enable/disable Waiting time in hours                             |
 
 The status is currently the `AZ` parameter. You can change the status by changing this value. For example
 if you want to force the bioreactor to go in the emptying state you should ensure that the bits `FLAG_FOOD_CONTROL` & `FLAG_RELAY_EMPTYING` are set. In other words, you may have to add 2^2 (4) + 2^9 (512) = 516 to your value of the parameter `AZ` (in the case it was not yet enabled). Same procedure is to be implemented for filling.
