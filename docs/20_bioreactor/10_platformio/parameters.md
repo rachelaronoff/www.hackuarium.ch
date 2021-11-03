@@ -89,7 +89,7 @@ if you want to force the bioreactor to go in the emptying state you should ensur
 
 ## PARAM_ENABLED
 
-`PARAM_ENABLED` allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, food control and agitation.
+`PARAM_ENABLED (Z)` allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, food control and agitation.
 
 | BIT | PARAM_STATUS         | COMMENT                          |
 | --- | -------------------- | -------------------------------- |
