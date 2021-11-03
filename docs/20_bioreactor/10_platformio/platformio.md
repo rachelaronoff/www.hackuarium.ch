@@ -56,11 +56,9 @@ SUBSYSTEMS=="usb", ATTRS{idVendor}=="1781", ATTRS{idProduct}=="0c9f", GROUP="plu
 
 ## Libraries
 
-In this project, we use many non standard libraries. By default PlatformIO IDE
-will look for them in `<Project>/include`.
+In this project, we use many non standard libraries. By default PlatformIO IDE will look for them in `<Project>/include`.
 
-If you are using only our project it is easier to directly point this folder
-to the libraries that are present in the github.
+If you are using only our project it is easier to directly point this folder to the libraries that are present in the github.
 
 ```bash
 $: mkdir ~/libraries/
@@ -73,11 +71,15 @@ Warning: Time library update v1.5.0 change committed in BioMain including TimeLi
 
 You should now be able to compile the project from PlatformIO IDE.
 
+### Burning bootloader
+
 You can now proceed with burning the bootloader using the `program_via_USBtinyISP` environment created in `platformio.ini` file. Go to `platformIO Terminal` and type:
 
 ```bash
 $: pio run -e program_via_USBtinyISP --target bootloader
 ```
+
+### Upload the code
 
 Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button:
 
