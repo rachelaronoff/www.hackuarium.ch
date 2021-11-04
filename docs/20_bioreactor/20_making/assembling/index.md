@@ -20,7 +20,7 @@ The first step to assemble the bioreactor is to put the casing together. In this
 
 First, identify the parts you are dealing with. In the following image are shown all the parts required do build the base, numbered from 1 to 7. The red lines show how the different parts connect.
 
-[images/casing_parts_list.png](images/casing_parts_list.png)
+![images/casing_parts_list.png](images/casing_parts_list.png)
 
 Tape all parts together **except for the lid** and glue them with _dichloromethane_. Wait about 10 minutes until the solvent has dried out. When assembling, please beware of the following details:
 

@@ -15,8 +15,8 @@ The first 26 parameters (A -> Z) will be saved regularly in the log. These value
 | 7   | H   | PARAM_WEIGHT_SINCE_LAST_EVENT |                                                                   |
 | 8   | I   | PARAM_WEIGHT_MIN              | Weight value for low level                                        |
 | 9   | J   | PARAM_WEIGHT_MAX              | Weight value for high level                                       |
-| 22  | W   | PARAM_CURRENT_STEP            |                                                                   |
-| 23  | X   | PARAM_CURRENT_WAIT_TIME       |                                                                   |
+| 22  | W   | PARAM_CURRENT_STEP            | Enable protocol of bioreactor                                     |
+| 23  | X   | PARAM_CURRENT_WAIT_TIME       | Waiting time before start protocol                                |
 | 24  | Y   | PARAM_ERROR                   | Error in the system                                               |
 | 25  | Z   | PARAM_ENABLED                 | Currently active service                                          |
 | 26  | AA  | PARAM_STEPPER_SPEED           | Motor speed                                                       |
@@ -83,10 +83,10 @@ be enabled or disabled using the method `start` and `stop`. You may also check t
 | 8   | FLAG_PH_CALIBRATE       | enable/disable pH calibration                                    |
 | 9   | FLAG_RELAY_ACID         | enable/disable acid addition                                     |
 | 10  | FLAG_RELAY_BASE         | enable/disable base addition                                     |
-| 11  | FLAG_WAITING_TIME_HOURS | enable/disable Waiting time in hours                             |
+| 11  | FLAG_WAITING_TIME_HOURS | enable/disable waiting time in hours                             |
 
 The status is currently the `AZ` parameter. You can change the status by changing this value. For example
-if you want to force the bioreactor to go in the emptying state you should ensure that the bits `FLAG_FOOD_CONTROL` & `FLAG_RELAY_EMPTYING` are set. In other words, you may have to add 2^2 (4) + 2^9 (512) = 516 to your value of the parameter `AZ` (in the case it was not yet enabled). Same procedure is to be implemented for filling.
+if you want to force the bioreactor to go in the emptying state you should ensure that the bits `FLAG_FOOD_CONTROL` & `FLAG_RELAY_EMPTYING` are set. In other words, you may have to add 2^2 (4) + 2^7 (128) = 132 to your value of the parameter `AZ` (in the case it was not yet enabled). Same procedure is to be implemented for filling.
 
 ## PARAM_ENABLED
 
@@ -107,7 +107,7 @@ If you want to control everything the value of `PARAM_ENABLED` should be 63.
 
 | BIT | PARAM_ERROR                  | COMMENT                                                    |
 | --- | ---------------------------- | ---------------------------------------------------------- |
-| 0   | FLAG_TEMP_PCB_PROBE_ERROR    | Pcb probe failed (one wire not answering)1                 |
+| 0   | FLAG_TEMP_PCB_PROBE_ERROR    | Pcb probe failed (one wire not answering)                  |
 | 1   | FLAG_TEMP_LIQ_PROBE1_ERROR   | Liquid probe in the top failed (one wire not answering)    |
 | 2   | FLAG_TEMP_LIQ_PROBE2_ERROR   | Liquid probe in the bottom failed (one wire not answering) |
 | 3   | FLAG_TEMP_PCB_RANGE_ERROR    | Temperature of pcb is outside range                        |
