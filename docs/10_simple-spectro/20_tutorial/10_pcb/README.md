@@ -43,7 +43,7 @@ To ensure that the pins are perpendicular to the screen, first solder one pin, t
 ![pins2.jpg](pins2.JPG)
 :::
 
-You can now leave the screen on the side for a bit: we used it as a soldering warmup.
+You can now leave the screen on the side for a bit: we used it as a soldering warm-up.
 
 ## 2) Potentiometer
 
@@ -55,7 +55,7 @@ Next, take the board on face 1 and solder the potentiometer in place. Cut the pi
 ## 3) RGB LED
 
 :::info
-Be careful when soldering the LEDs: for these components, the orientation matters! You can recognise the minus pin of an LED because it is the shortest one, and because there is a flat on that side of the LED. You can feel it with your fingers if you roll the LED between them.
+Be careful when soldering the LEDs: for these components, the orientation matters! You can recognize the minus pin of an LED because it is the shortest one, and because there is a flat on that side of the LED. You can feel it with your fingers if you roll the LED between them.
 :::
 
 Start by placing the RGB LED on the board in the correct orientation, but don't push until the LED is against the board. Gently bend the pins of the LED towards the square hole until you get an angle of 90 degrees. Now make the side of the LED touch the board and solder it in place.
