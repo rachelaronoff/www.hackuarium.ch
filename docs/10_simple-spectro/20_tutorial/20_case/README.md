@@ -14,7 +14,7 @@ The case parts can be found in bag C, as well as all the screws that will be use
 10. Longer sides of the case
 11. All four sides of the cell well
 
-// picture
+![case-parts.png](case-parts.png)
 
 ## 1) Small screws and MF spacers on top
 

@@ -1,6 +1,6 @@
 # Soldering the PCB
 
-The first step in the construction of the spectophotometer is to solder the electonic board. The board actually comes presoldered with all of the surface mouted (SMD) components, but the through-hole components have to be soldered by hand. Don't worry if you've never soldered anything: the process is relatively simple.
+The first step in the construction of the spectophotometer is to solder the electronic board. The board actually comes pre-soldered with all of the surface mounted (SMD) components, but the through-hole components have to be soldered by hand. Don't worry if you've never soldered anything: the process is relatively simple.
 
 First, take all the component of bag B out. You should have the following components in front of you:
 
@@ -13,11 +13,12 @@ First, take all the component of bag B out. You should have the following compon
 7. LCD screen
 8. Single row straight pins header for the screen
 
-// picture
+![elec-parts.png](elec-parts.png)
 
 You can take the PCB out of it's bag. The PCB has two faces, which well refer to as face 1 and face 2. Be careful which components are soldered on which face!
 
-// picture
+![pcb-face1.png](pcb-face1.png)
+![pcb-face2.png](pcb-face2.png)
 
 You can now turn your soldering iron on and set it on around 350 degrees Celcius.
 :::caution
