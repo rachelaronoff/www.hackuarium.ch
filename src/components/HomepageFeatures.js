@@ -17,13 +17,13 @@ const FeatureList = [
   {
     title: "Beemos",
     link: "/docs/beemos",
-    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("../../static/img/logo-beemos.svg").default,
     description: <>Monitor bee hives</>,
   },
   {
     title: "Incubator",
     link: "/docs/incubator",
-    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    Svg: require("../../static/img/logo-incubator.svg").default,
     description: (
       <>
         Convert an expanded polystyrene foam (EPS) to an incubator for less than
@@ -34,7 +34,7 @@ const FeatureList = [
   {
     title: "Bioreactor",
     link: "/docs/bioreactor",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("../../static/img/logo-bioreactor.svg").default,
     description: (
       <>
         Control de temperature, agitation and volume using this open-source
@@ -45,7 +45,7 @@ const FeatureList = [
   {
     title: "pH meter",
     link: "/docs/phmeter",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    Svg: require("../../static/img/logo-phmeter.svg").default,
     description: (
       <>Measure conductimetry and pH using this I2C connectable pH meter.</>
     ),

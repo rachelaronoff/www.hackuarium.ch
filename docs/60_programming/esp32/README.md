@@ -52,6 +52,10 @@ It is related to those issues:
 
 This driver may help on Big Sur b tu fails for the last Monterey version [CH9102_Mac_Driver.zip](CH9102_Mac_Driver.zip)
 
+Code: https://github.com/WCHSoftGroup/ch34xser_macos
+
+On M1 we may have to explicitely accept kext (kernel extensions): https://support.apple.com/guide/security/kernel-extensions-sec8e454101b/1/web/1#sec8697bc589
+
 ## FS
 
 Create a folder at the first level called `data`.
