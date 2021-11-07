@@ -50,6 +50,8 @@ It is related to those issues:
 - https://github.com/espressif/esptool/issues/280
 - https://github.com/Xinyuan-LilyGO/LilyGo-T-Call-SIM800/issues/139
 
+This driver may help on Big Sur b tu fails for the last Monterey version [CH9102_Mac_Driver.zip](CH9102_Mac_Driver.zip)
+
 ## FS
 
 Create a folder at the first level called `data`.
