@@ -1,3 +1,5 @@
+# Set environment
+
 ## Install platform IO cli
 
 `export PATH=$PATH:~/.platformio/penv/bin`
