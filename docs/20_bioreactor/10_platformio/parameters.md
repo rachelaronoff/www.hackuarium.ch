@@ -15,6 +15,7 @@ The first 26 parameters (A -> Z) will be saved regularly in the log. These value
 | 7   | H   | PARAM_WEIGHT_SINCE_LAST_EVENT |                                                                   |
 | 8   | I   | PARAM_WEIGHT_MIN              | Weight value for low level                                        |
 | 9   | J   | PARAM_WEIGHT_MAX              | Weight value for high level                                       |
+| 10  | K   | PARAM_WEIGHT_TARGET           | Weight target                                                     |
 | 22  | W   | PARAM_CURRENT_STEP            | Enable protocol of bioreactor                                     |
 | 23  | X   | PARAM_CURRENT_WAIT_TIME       | Waiting time before start protocol                                |
 | 24  | Y   | PARAM_ERROR                   | Error in the system                                               |

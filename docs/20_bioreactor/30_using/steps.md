@@ -30,24 +30,26 @@ Flags:
 1xxxx yyy yyyy yyyy
 
 - xxxx the parameter (0 -> 15)
-  - 0: target temperature (in °C)
-- yyy yyyy yyyy: the new value (0 to 2043)
+  - 4: Target temperature (in °C)
+  - 8: Minimum weight (in gr.)
+  - 9: Maximum weight (in gr.)
+- yyy yyyy yyyy: the new value (0 to 2047)
 
 ### Example
 
 Using two peristaltic pumps to remove bacteria and add fresh media
 
-| Step | Instruction         | Explanation                    |
-| ---- | ------------------- | ------------------------------ |
-| 0    | 01000 000 0000 0011 | Stepper: on, PID: on           |
-| 1    | 00010 000 0001 1000 | Wait 1 day (24 h)              |
-| 2    | 01000 000 0000 0000 | Stepper: off, PID: off         |
-| 3    | 00001 000 0001 1110 | Wait 30 min                    |
-| 4    | 01000 000 0000 0100 | OUT1: on                       |
-| 5    | 00011 000 0001 1110 | Weight reduction 30%           |
-| 6    | 01000 000 0000 1011 | OUT2: on, Stepper: on, PID: on |
-| 7    | 00011 000 0001 1110 | Weight increase 100%           |
-| 8-15 | 00000 000 0000 0000 | Do nothing                     |
+| Step | Instruction                 | Explanation                    |
+| ---- | --------------------------- | ------------------------------ |
+| 0    | 01000 000 0000 0011 (16387) | Stepper: on, PID: on           |
+| 1    | 00010 000 0001 1000 (4120)  | Wait 1 day (24 h)              |
+| 2    | 01000 000 0000 0000 (16384) | Stepper: off, PID: off         |
+| 3    | 00001 000 0001 1110 (2078)  | Wait 30 min                    |
+| 4    | 01000 000 0000 0100 (16388) | OUT1: on                       |
+| 5    | 00011 000 0001 1110 (6174)  | Weight reduction 30%           |
+| 6    | 01000 000 0000 1011 (16395) | OUT2: on, Stepper: on, PID: on |
+| 7    | 00011 000 0001 1110 (6174)  | Weight increase 100%           |
+| 8-15 | 00000 000 0000 0000 (0)     | Do nothing                     |
 
 Changing temperature and turning on / off a light (on IO3).
 We simulate a day / night cycle
