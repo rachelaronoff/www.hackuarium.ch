@@ -1,6 +1,6 @@
 # Soldering the PCB
 
-The first step in the construction of the spectophotometer is to solder the electonic board. The board actually comes presoldered with all of the surface mouted (SMD) components, but the through-hole components have to be soldered by hand. Don't worry if you've never soldered anything: the process is relatively simple.
+The first step in the construction of the spectophotometer is to solder the electronic board. The board actually comes pre-soldered with all of the surface mounted (SMD) components, but the through-hole components have to be soldered by hand. Don't worry if you've never soldered anything: the process is relatively simple.
 
 First, take all the component of bag B out. You should have the following components in front of you:
 
@@ -13,11 +13,12 @@ First, take all the component of bag B out. You should have the following compon
 7. LCD screen
 8. Single row straight pins header for the screen
 
-// picture
+![elec-parts.png](elec-parts.png)
 
 You can take the PCB out of it's bag. The PCB has two faces, which well refer to as face 1 and face 2. Be careful which components are soldered on which face!
 
-// picture
+![pcb-face1.png](pcb-face1.png)
+![pcb-face2.png](pcb-face2.png)
 
 You can now turn your soldering iron on and set it on around 350 degrees Celcius.
 :::caution
@@ -43,7 +44,7 @@ To ensure that the pins are perpendicular to the screen, first solder one pin, t
 ![pins2.jpg](pins2.JPG)
 :::
 
-You can now leave the screen on the side for a bit: we used it as a soldering warmup.
+You can now leave the screen on the side for a bit: we used it as a soldering warm-up.
 
 ## 2) Potentiometer
 
@@ -55,7 +56,7 @@ Next, take the board on face 1 and solder the potentiometer in place. Cut the pi
 ## 3) RGB LED
 
 :::info
-Be careful when soldering the LEDs: for these components, the orientation matters! You can recognise the minus pin of an LED because it is the shortest one, and because there is a flat on that side of the LED. You can feel it with your fingers if you roll the LED between them.
+Be careful when soldering the LEDs: for these components, the orientation matters! You can recognize the minus pin of an LED because it is the shortest one, and because there is a flat on that side of the LED. You can feel it with your fingers if you roll the LED between them.
 :::
 
 Start by placing the RGB LED on the board in the correct orientation, but don't push until the LED is against the board. Gently bend the pins of the LED towards the square hole until you get an angle of 90 degrees. Now make the side of the LED touch the board and solder it in place.

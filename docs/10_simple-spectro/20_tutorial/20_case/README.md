@@ -14,7 +14,17 @@ The case parts can be found in bag C, as well as all the screws that will be use
 10. Longer sides of the case
 11. All four sides of the cell well
 
-// picture
+![case-parts.png](case-parts.png)
+
+You'll also already need some of the parts of bag D, which contains:
+
+1. Rotary push button cover
+2. 4 x Rubber feet
+3. Spectrophotometer sticker
+4. 2 x cells for experiments
+5. Mini USB cable for charging
+
+![final-parts.png](final-parts.png)
 
 ## 1) Small screws and MF spacers on top
 
@@ -35,18 +45,46 @@ The order of the cell well is important! You should laid them out flat like on t
 
 ## 4) Put cell well in place
 
+Manipulate the well delicately so that it doesn't disassemble and place it in the corresponding hole in the top face of the case. The holes of the well should be aligned with both LEDs and the light detector (the largest hole facing the UV LED).
+![well3.jpg](well3.JPG)
+
 ## 5) Put all sides in place
+
+You can now take the four sides of the case and put the on the top face. The hole on one of the shorter sides must face the USB connector.
+![sides.jpg](sides.JPG)
+![usb-side.jpg](usb-side.JPG)
 
 ## 6) Battery and Velcro
 
+The case in nearly assembled, but before you put the bottom face in place, you have to connect the battery to the PCB. Also, put one of the Velcro parts on the battery and the other one on the case's bottom face, as shown on the picture.
+![velcro1.jpg](velcro1.JPG)
+![velcro2.jpg](velcro2.JPG)
+
 ## 7) Put bottom face in place
 
-## 8) Close the case
-
+You can finally put the bottom face in place.
 :::tip
 Use the screwdriver to gently push the parts of the well so that they enter in the bottom face hole. This can be a tricky. Just be a bit patient.
 :::
 
-## 9) Sticker and button
+![bottom.jpg](bottom.JPG)
+
+## 8) Close the case
+
+Close the case using the longer M3 screws and the screwdriver.
+![bottom2.jpg](bottom2.JPG)
+
+## 9) Rubber feet and sticker
+
+Place the four rubber feet on the bottom of the case to prevent slipping. To be sure to always find the userguide for the spectro, you can also put the sticker from bag D on the bottom face of the case.
+
+![feet.jpg](feet.JPG)
+
+## 10) Button
+
+Finally, you can take the rotary push button cover and gently push in on the button.
+![button.jpg](button.JPG)
 
 ## You're done!
+
+You've completed the assembly of the case! You're spectrophotometer is now nearly ready to use.
