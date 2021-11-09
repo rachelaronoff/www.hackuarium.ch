@@ -11,11 +11,11 @@ sidebar_position: 1
 1. Git (^2.25.1)
 2. Visual Studio Code (^1.61.2)
 
-You know with age we take some habits and it would be easier if you follow the same ones ...
+You know with age we take some habits and it would be easier if you follow the same ones...
 
 All our github projects are always in a folder called `git`
 which is at the first level of the `home` directory. It is followed by the
-name of the github user/organisation and finally the project name.
+name of the github user/organization and finally the project name.
 
 So, to install the project from bash:
 
@@ -65,7 +65,9 @@ $: mkdir ~/libraries/
 $: ln -s ~/git/hackuarium/bioreactor-platformio/BioMain/include/hack/libraries/ ~/libraries/
 ```
 
-Warning: Time library update v1.5.0 change committed in BioMain including TimeLib.h instead of Time.h resolves bugs on OSX
+:::caution
+Time library update v1.5.0 change committed in BioMain including TimeLib.h instead of Time.h resolves bugs on OSX.
+:::
 
 ## That's it
 
@@ -79,9 +81,11 @@ You can now proceed with burning the bootloader using the `program_via_USBtinyIS
 $: pio run -e program_via_USBtinyISP --target bootloader
 ```
 
+![PlatformIO: New Terminal](terminal.png)
+
 ### Upload the code
 
-Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button:
+Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button or press `Ctrl + Alt + U`:
 
 ![Upload option](upload.png)
 
@@ -91,4 +95,4 @@ You can check upload success in the same terminal:
 
 # The parameters
 
-In order to control the bioreactor you should have a look at the description of the [parameters](parameters.md).
+In order to control the bioreactor you should have a look at the description of the [parameters](parameters.md) (Go Next).
