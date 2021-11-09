@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This manual describes how to assemble a functionnal bioreactor once the PCB plate has been readied and the pieces for the casing have been laser cutted.
+This manual describes how to assemble a functionnal bioreactor once the PCB plate has been ready and the pieces for the casing have been laser cutted.
 
 The bioreactor is composed of three distinct layers, as can be seen on the following image:
 
@@ -18,15 +18,50 @@ The bioreactor is composed of three distinct layers, as can be seen on the follo
 
 The first step to assemble the bioreactor is to put the casing together. In this part, we will discuss the base only. Explanation on how to assemble the heating plate will come in a [dedicated section](#readying-the-heating-cell).
 
-First, identify the parts you are dealing with. In the following image are shown all the parts required do build the base, numbered from 1 to 7. The red lines show how the different parts connect.
+First, identify the parts you are dealing with. In the following image are shown all the parts required do build the base.
 
-![images/casing_parts_list.png](images/casing_parts_list.png)
+:::note
+Sections `A` and `B` are the base for the heating plate.
+:::
 
-Tape all parts together **except for the lid** and glue them with _dichloromethane_. Wait about 10 minutes until the solvent has dried out. When assembling, please beware of the following details:
+:::note
+Sections `C` and `D` for the main board.
+:::
 
-- On the bottom part, the small holes designed for the screws that will support the PCB and the LCD should be on the left when looking from the front of the reactor.
-- The part containing the two big circular holes for the pumps should be on the right side when looking from the front and the holes should be in the back
-- On both the back part and the small front part, the holes should be on the left when facing the bioreactor.
+![Base part](images/main_case.png)
+
+| A   | DESCRIPTION        |
+| :-- | ------------------ |
+| 1   | Heating plate base |
+
+| B   | DESCRIPTION |
+| :-- | ----------- |
+| 1   | Front       |
+| 2   | Behind      |
+| 3   | Left        |
+| 4   | Right       |
+
+| C   | DESCRIPTION |
+| :-- | ----------- |
+| 1   | Above       |
+| 2   | Down        |
+
+| D   | DESCRIPTION |
+| :-- | ----------- |
+| 1   | Left        |
+| 2   | Right       |
+| 3   | Front       |
+| 4   | Behind      |
+
+Tape all parts together **except `Above`** and glue them with _dichloromethane_. Wait about 10 minutes until the solvent has dried out. When assembling, please beware of the following details:
+
+:::caution
+
+- On the `Down` part, the small holes designed for the screws that will support the PCB should be on the `Front` when looking from the front of the bioreactor.
+- The part containing only one big circular hole for the pump should be on the left side when looking from the front and the holes should be in the back.
+- The part containing the two big circular holes for the pump and fan should be on the right side when looking from the front and the holes should be in the back.
+
+:::
 
 The result should look like this:
 
@@ -61,7 +96,7 @@ First, we will fixate the stepper motor that will control the agitation.
 
 Take the base top part and insert the _stepper motor_ in the middle. Fixate it with four _M3x14mm_ screws. Place four _M4 bolts_ between the lid and the motor to create some space between them.
 
-[images/stepper1.png](images/stepper1.png)
+![images/stepper1.png](images/stepper1.png)
 
 Take one _cable 6 pins KF2510-6P_ and solder it to the stepper motor as shown in the following pictures:
 
