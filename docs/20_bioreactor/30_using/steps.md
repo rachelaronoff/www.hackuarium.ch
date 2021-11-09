@@ -48,7 +48,7 @@ Using two peristaltic pumps to remove bacteria and add fresh media
 | 4    | 01000 000 0000 0100 (16388) | OUT1: on                       |
 | 5    | 00011 000 0001 1110 (6174)  | Weight reduction 30%           |
 | 6    | 01000 000 0000 1011 (16395) | OUT2: on, Stepper: on, PID: on |
-| 7    | 00011 000 0001 1110 (6174)  | Weight increase 100%           |
+| 7    | 00100 000 0110 0100 (8292)  | Weight increase 100%           |
 | 8-15 | 00000 000 0000 0000 (0)     | Do nothing                     |
 
 Changing temperature and turning on / off a light (on IO3).

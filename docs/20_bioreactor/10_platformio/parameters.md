@@ -5,17 +5,15 @@ The first 26 parameters (A -> Z) will be saved regularly in the log. These value
 
 | ID  | P   | NAME                          | DESCRIPTION                                                       |
 | --- | --- | ----------------------------- | ----------------------------------------------------------------- |
-| 0   | A   | PARAM_TEMP_LIQ1               | Temperature of the solution (top)                                 |
-| 1   | B   | PARAM_TEMP_LIQ2               | Temperature of the solution (bottom)                              |
+| 0   | A   | PARAM_TEMP_EXT1               | Temperature of the solution (top)                                 |
+| 1   | B   | PARAM_TEMP_EXT2               | Temperature of the solution (bottom)                              |
 | 2   | C   | PARAM_TEMP_PCB                | Temperature of the PCB                                            |
-| 3   | D   | PARAM_TEMP_PID                | Current heating power                                             |
+| 3   | D   | PARAM_PID                     | Current heating power                                             |
 | 4   | E   | PARAM_TEMP_TARGET             | Target temperature of the liquid (°C)                             |
 | 5   | F   | PARAM_WEIGHT                  | In unit of the balance                                            |
 | 6   | G   | PARAM_WEIGHT_G                | In unit of the balance (gr)                                       |
 | 7   | H   | PARAM_WEIGHT_SINCE_LAST_EVENT |                                                                   |
-| 8   | I   | PARAM_WEIGHT_MIN              | Weight value for low level                                        |
-| 9   | J   | PARAM_WEIGHT_MAX              | Weight value for high level                                       |
-| 10  | K   | PARAM_WEIGHT_TARGET           | Weight target                                                     |
+| 8   | I   | PARAM_WEIGHT_MAX              | Weight value for high level                                       |
 | 22  | W   | PARAM_CURRENT_STEP            | Enable protocol of bioreactor                                     |
 | 23  | X   | PARAM_CURRENT_WAIT_TIME       | Waiting time before start protocol                                |
 | 24  | Y   | PARAM_ERROR                   | Error in the system                                               |
@@ -24,7 +22,7 @@ The first 26 parameters (A -> Z) will be saved regularly in the log. These value
 | 27  | AB  | PARAM_STEPPER_STEPS           | Number of steps before changing the direction of the motor        |
 | 28  | AC  | PARAM_STEPPER_WAIT            | Wait time in seconds between change direction                     |
 | 29  | AD  | PARAM_WEIGHT_FACTOR           | Weight calibration: conversion factor digital -> gr               |
-| 30  | AE  | PARAM_WEIGHT_OFFSET           | Weight calibration: digital offset value when bioreactor is empty |
+| 30  | AE  | PARAM_WEIGHT_EMPTY            | Weight calibration: digital offset value when bioreactor is empty |
 | 31  | AF  | PARAM_SEDIMENTATION_TIME      | Number of minutes to wait without rotation before emptying        |
 | 32  | AG  | PARAM_FILLED_TIME             | Number of minutes to stay in the filled state                     |
 | 51  | AZ  | PARAM_STATUS                  | Enabled service (set by user)                                     |
@@ -71,20 +69,22 @@ The `PARAM_ENABLED (Z)` will allow to activate or deactivate some function of th
 `PARAM_STATUS` will display the currently active functionalities. It is composed of different bits that can
 be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
 
-| BIT | PARAM_STATUS            | COMMENT                                                          |
-| --- | ----------------------- | ---------------------------------------------------------------- |
-| 0   | FLAG_PID_CONTROL        | enable/disable heating                                           |
-| 1   | FLAG_STEPPER_CONTROL    | enable/disable agitation control                                 |
-| 2   | FLAG_FOOD_CONTROL       | enable/disable food control                                      |
-| 3   | FLAG_PH_CONTROL         | enable/disable pH control                                        |
-| 4   | FLAG_GAS_CONTROL        | enable/disable gas control                                       |
-| 5   | FLAG_SEDIMENTATION      | enable/disable sedimentation (one of the phases of food control) |
-| 6   | FLAG_RELAY_FILLING      | enable/disable filling pump (one of the phases of food control)  |
-| 7   | FLAG_RELAY_EMPTYING     | enable/disable emptying pump (one of the phases of food control) |
-| 8   | FLAG_PH_CALIBRATE       | enable/disable pH calibration                                    |
-| 9   | FLAG_RELAY_ACID         | enable/disable acid addition                                     |
-| 10  | FLAG_RELAY_BASE         | enable/disable base addition                                     |
-| 11  | FLAG_WAITING_TIME_HOURS | enable/disable waiting time in hours                             |
+| BIT | PARAM_STATUS         | COMMENT                                                          |
+| --- | -------------------- | ---------------------------------------------------------------- |
+| 0   | FLAG_PID_CONTROL     | enable/disable heating                                           |
+| 1   | FLAG_STEPPER_CONTROL | enable/disable agitation control                                 |
+| 2   | FLAG_OUTPUT_1        | enable/disable food control                                      |
+| 3   | FLAG_OUTPUT_2        | enable/disable food control                                      |
+| 4   | FLAG_OUTPUT_3        | enable/disable food control                                      |
+| 5   | FLAG_OUTPUT_4        | enable/disable food control                                      |
+| 6   | FLAG_PH_CONTROL      | enable/disable pH control                                        |
+| 7   | FLAG_GAS_CONTROL     | enable/disable gas control                                       |
+| 8   | FLAG_SEDIMENTATION   | enable/disable sedimentation (one of the phases of food control) |
+| 9   | FLAG_RELAY_FILLING   | enable/disable filling pump (one of the phases of food control)  |
+| 10  | FLAG_RELAY_EMPTYING  | enable/disable emptying pump (one of the phases of food control) |
+| 11  | FLAG_PH_CALIBRATE    | enable/disable pH calibration                                    |
+| 12  | FLAG_RELAY_ACID      | enable/disable acid addition                                     |
+| 13  | FLAG_RELAY_BASE      | enable/disable base addition                                     |
 
 The status is currently the `AZ` parameter. You can change the status by changing this value. For example
 if you want to force the bioreactor to go in the emptying state you should ensure that the bits `FLAG_FOOD_CONTROL` & `FLAG_RELAY_EMPTYING` are set. In other words, you may have to add 2^2 (4) + 2^7 (128) = 132 to your value of the parameter `AZ` (in the case it was not yet enabled). Same procedure is to be implemented for filling.
