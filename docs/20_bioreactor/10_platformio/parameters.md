@@ -1,7 +1,7 @@
 # Parameters
 
 All the functionalities and the communication between processes is ensured by a common list of parameters.
-The first 26 parameters (A -> Z) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
+The first 26 parameters (<kbd>A</kbd> -> <kbd>Z</kbd>) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
 
 | ID  | P   | NAME                          | DESCRIPTION                                                         |
 | --- | --- | ----------------------------- | ------------------------------------------------------------------- |

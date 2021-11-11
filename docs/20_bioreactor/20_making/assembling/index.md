@@ -43,8 +43,8 @@ Sections `C` and `D` for the main board.
 
 | C   | DESCRIPTION |
 | :-- | ----------- |
-| 1   | Above       |
-| 2   | Down        |
+| 1   | Top         |
+| 2   | Bottom      |
 
 | D   | DESCRIPTION |
 | :-- | ----------- |
@@ -53,11 +53,11 @@ Sections `C` and `D` for the main board.
 | 3   | Front       |
 | 4   | Behind      |
 
-Tape all parts together **except `Above`** and glue them with _dichloromethane_. Wait about 10 minutes until the solvent has dried out. When assembling, please beware of the following details:
+Tape all parts together **except `Top`** and glue them with _dichloromethane_. Wait about 10 minutes until the solvent has dried out. When assembling, please beware of the following details:
 
 :::caution
 
-- On the `Down` part, the 4 small holes designed for the screws that will support the PCB should be on the `Front` when looking from the front of the bioreactor.
+- On the `Bottom` part, the 4 small holes designed for the screws that will support the PCB should be on the `Front` when looking from the front of the bioreactor.
 - The part containing only one big circular hole for the pump `Right` should be on the right side when looking from the front and the holes should be in the back.
 - The part containing the two big circular holes for the pump and fan `Left` should be on the left side when looking from the front and the holes should be in the back.
 
@@ -65,15 +65,83 @@ Tape all parts together **except `Above`** and glue them with _dichloromethane_.
 
 ### Heating plate base
 
-![images/pumps1.jpg](images/heating_plate/DSC_0705.JPG)
+![Top view of heating plate base](images/heating_plate/DSC_0705.JPG)
 
-![images/pumps1.jpg](images/heating_plate/DSC_0707.JPG)
+![Bottom view of heating plate base](images/heating_plate/DSC_0707.JPG)
 
-![images/pumps1.jpg](images/heating_plate/DSC_0708.JPG)
+![Solder cable in the heating plate](images/heating_plate/DSC_0708.JPG)
 
-![images/pumps1.jpg](images/heating_plate/DSC_0709.JPG)
+![Header of the connector for heating plate to bioreactor base](images/heating_plate/DSC_0709.JPG)
 
-![images/pumps1.jpg](images/heating_plate/DSC_0710.JPG)
+![Correct glue between heating plate and its base](images/heating_plate/DSC_0710.JPG)
+
+### Top
+
+![Components for top](images/top/DSC_0956.JPG)
+
+#### Loading cells
+
+![Components for loading cells](images/top/DSC_0935.JPG)
+
+![Loading cells connection A](images/top/DSC_0972.JPG)
+
+![Loading cells connection B](images/top/DSC_0973.JPG)
+
+![Final connection for Loading cells](images/top/DSC_0926.JPG)
+
+#### Loading cell connection board
+
+![Board connection for Loading cells](images/top/DSC_0950.JPG)
+
+![Top view for loading cell board](images/top/DSC_0959.JPG)
+
+![Board connection for Loading cells](images/top/DSC_0966.JPG)
+
+#### Stepper
+
+![Components for stepper](images/top/DSC_0943.JPG)
+
+![First connection for stepper A](images/top/DSC_0989.JPG)
+
+![First connection for stepper B](images/top/DSC_0992.JPG)
+
+![Connection for stepper in case](images/top/DSC_0995.JPG)
+
+#### Agitation
+
+![Agitation for stepper](images/top/DSC_0996.JPG)
+
+![Agitation + stepper](images/top/DSC_1000.JPG)
+
+## Base case
+
+![Case parts for principal base of the bioreactor](images/DSC_0716.JPG)
+
+### Right
+
+![Right components](images/right/DSC_0725.JPG)
+
+![Right conection A](images/right/DSC_0730.JPG)
+
+![Right conection B](images/right/DSC_0735.JPG)
+
+### Left
+
+![Left components](images/left/DSC_0747.JPG)
+
+![Pump connection in left case](images/left/DSC_0748.JPG)
+
+![Fan connection in left case](images/left/DSC_0759.JPG)
+
+![Left connections](images/left/DSC_0758.JPG)
+
+### Front
+
+![Front components](images/front/DSC_0856.JPG)
+
+![Front connections](images/front/DSC_0859.JPG)
+
+![Front - how to solder the cable connector](images/front/DSC_0869.JPG)
 
 ## Inserting the peristaltic pumps
 
