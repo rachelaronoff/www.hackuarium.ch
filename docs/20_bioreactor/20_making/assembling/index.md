@@ -65,15 +65,15 @@ Tape all parts together **except `Above`** and glue them with _dichloromethane_.
 
 ### Heating plate base
 
-![images/pumps1.jpg](images/1_heating_plate/1_DSC_0705.JPG)
+![images/pumps1.jpg](images/heating_plate/1_DSC_0705.JPG)
 
-![images/pumps1.jpg](images/1_heating_plate/2_DSC_0707.JPG)
+![images/pumps1.jpg](images/heating_plate/2_DSC_0707.JPG)
 
-![images/pumps1.jpg](images/1_heating_plate/3_DSC_0708.JPG)
+![images/pumps1.jpg](images/heating_plate/3_DSC_0708.JPG)
 
-![images/pumps1.jpg](images/1_heating_plate/4_DSC_0709.JPG)
+![images/pumps1.jpg](images/heating_plate/4_DSC_0709.JPG)
 
-![images/pumps1.jpg](images/1_heating_plate/5_DSC_0710.JPG)
+![images/pumps1.jpg](images/heating_plate/5_DSC_0710.JPG)
 
 ## Inserting the peristaltic pumps
 
