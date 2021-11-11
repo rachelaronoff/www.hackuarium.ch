@@ -65,15 +65,15 @@ Tape all parts together **except `Above`** and glue them with _dichloromethane_.
 
 ### Heating plate base
 
-![images/pumps1.jpg](images/heating_plate/1_DSC_0705.JPG)
+![images/pumps1.jpg](images/heating_plate/DSC_0705.JPG)
 
-![images/pumps1.jpg](images/heating_plate/2_DSC_0707.JPG)
+![images/pumps1.jpg](images/heating_plate/DSC_0707.JPG)
 
-![images/pumps1.jpg](images/heating_plate/3_DSC_0708.JPG)
+![images/pumps1.jpg](images/heating_plate/DSC_0708.JPG)
 
-![images/pumps1.jpg](images/heating_plate/4_DSC_0709.JPG)
+![images/pumps1.jpg](images/heating_plate/DSC_0709.JPG)
 
-![images/pumps1.jpg](images/heating_plate/5_DSC_0710.JPG)
+![images/pumps1.jpg](images/heating_plate/DSC_0710.JPG)
 
 ## Inserting the peristaltic pumps
 
@@ -117,15 +117,17 @@ Once the stepper motor is properly in place, you will have to place the loading 
 
 Take three _loading cells_ and one _cable 5 pins KF2510-5P_.
 
-[images/loading-cells1.jpg](images/loading-cells1.jpg)
+images/loading-cells1.jpg
 
 Solder the wires of the loading cells to the 5 pins cable as shown in the following picture. The length of the wires from the loading cells to the cable head should be approximately 20cm.
 
-[images/loading-cells2.jpg](images/loading-cells2.jpg)
+images/loading-cells2.jpg
+images/loading-cells2.jpg
 
 Do not solder the black cable from the _KF2510-5P_. Bare it for a couple of centimeters. You should now have all three loading cells attached to each other as follows:
 
-[images/loading-cells3.jpg](images/loading-cells3.jpg)
+images/loading-cells3.jpg
+images/loading-cells3.jpg
 
 On the top part of the base, you will find three big rectangular holes each followed by two small circular ones. In each big hole, pass one loading cell from the bottom of the plate (the magnets from the stepper motor are on the top of the plate).
 
