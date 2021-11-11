@@ -18,7 +18,7 @@ The bioreactor is composed of three distinct layers, as can be seen on the follo
 
 The first step to assemble the bioreactor is to put the casing together. In this part, we will discuss the base only. Explanation on how to assemble the heating plate will come in a [dedicated section](#readying-the-heating-cell).
 
-First, identify the parts you are dealing with. In the following image are shown all the parts required do build the base.
+First, identify the parts you are dealing with. In the following image are shown all the parts required to build the base.
 
 :::note
 Sections `A` and `B` are the base for the heating plate.
@@ -48,8 +48,8 @@ Sections `C` and `D` for the main board.
 
 | D   | DESCRIPTION |
 | :-- | ----------- |
-| 1   | Left        |
-| 2   | Right       |
+| 1   | Right       |
+| 2   | Left        |
 | 3   | Front       |
 | 4   | Behind      |
 
@@ -57,25 +57,23 @@ Tape all parts together **except `Above`** and glue them with _dichloromethane_.
 
 :::caution
 
-- On the `Down` part, the small holes designed for the screws that will support the PCB should be on the `Front` when looking from the front of the bioreactor.
-- The part containing only one big circular hole for the pump should be on the left side when looking from the front and the holes should be in the back.
-- The part containing the two big circular holes for the pump and fan should be on the right side when looking from the front and the holes should be in the back.
+- On the `Down` part, the 4 small holes designed for the screws that will support the PCB should be on the `Front` when looking from the front of the bioreactor.
+- The part containing only one big circular hole for the pump `Right` should be on the right side when looking from the front and the holes should be in the back.
+- The part containing the two big circular holes for the pump and fan `Left` should be on the left side when looking from the front and the holes should be in the back.
 
 :::
 
-The result should look like this:
+### Heating plate base
 
-![images/casing1.jpg](images/casing1.jpg)
+![images/pumps1.jpg](images/1_heating_plate/1_DSC_0705.JPG)
 
-Once this is done, screw the support-screws for the LCD screen and the PCB-plate with 2 times 4 _M3x14mm screws_ attached to 2 times 4 _M3x14mm fasteners_.
+![images/pumps1.jpg](images/1_heating_plate/2_DSC_0707.JPG)
 
-The screws before assembly:
+![images/pumps1.jpg](images/1_heating_plate/3_DSC_0708.JPG)
 
-![images/screws1.jpg](images/screws1.jpg)
+![images/pumps1.jpg](images/1_heating_plate/4_DSC_0709.JPG)
 
-How it should look:
-
-![images/casing-screwed1.jpg](images/casing-screwed1.jpg)
+![images/pumps1.jpg](images/1_heating_plate/5_DSC_0710.JPG)
 
 ## Inserting the peristaltic pumps
 
@@ -119,15 +117,15 @@ Once the stepper motor is properly in place, you will have to place the loading 
 
 Take three _loading cells_ and one _cable 5 pins KF2510-5P_.
 
-![images/loading-cells1.jpg](images/loading-cells1.jpg)
+[images/loading-cells1.jpg](images/loading-cells1.jpg)
 
 Solder the wires of the loading cells to the 5 pins cable as shown in the following picture. The length of the wires from the loading cells to the cable head should be approximately 20cm.
 
-![images/loading-cells2.jpg](images/loading-cells2.jpg)
+[images/loading-cells2.jpg](images/loading-cells2.jpg)
 
 Do not solder the black cable from the _KF2510-5P_. Bare it for a couple of centimeters. You should now have all three loading cells attached to each other as follows:
 
-![images/loading-cells3.jpg](images/loading-cells3.jpg)
+[images/loading-cells3.jpg](images/loading-cells3.jpg)
 
 On the top part of the base, you will find three big rectangular holes each followed by two small circular ones. In each big hole, pass one loading cell from the bottom of the plate (the magnets from the stepper motor are on the top of the plate).
 
