@@ -14,6 +14,22 @@ The bioreactor is composed of three distinct layers, as can be seen on the follo
 
 **[To be completed]**
 
+For heating plate case:
+
+1. Part `A` of the cases
+2. Part `B` of the cases
+3. Dichloromethane
+4. Heating plate
+5. Isolation for heating plate
+6. Black silicone
+7. 2 pin connector
+
+### General
+
+1. Solder station.
+2. Tin.
+3. Solder paste.
+
 ## Assembling the casing
 
 The first step to assemble the bioreactor is to put the casing together. In this part, we will discuss the base only. Explanation on how to assemble the heating plate will come in a [dedicated section](#readying-the-heating-cell).
@@ -67,15 +83,52 @@ Tape all parts together **except `Top`** and glue them with _dichloromethane_. W
 
 ![Top view of heating plate base](images/heating_plate/DSC_0705.JPG)
 
+Components:
+
+1. Part `A` of the cases
+2. Part `B` of the cases
+3. Dichloromethane
+4. Heating plate
+5. Isolation for heating plate
+6. Black silicone
+7. 2 pin connector.
+
+Tape all parts together and glue with dochloromethane, in the top of this case you need to paste the isolation and heating plate both like the picture:
+
 ![Bottom view of heating plate base](images/heating_plate/DSC_0707.JPG)
+
+For the connector, you need to use a width cable that tolerate more than 4 A, and solder correctly:
 
 ![Solder cable in the heating plate](images/heating_plate/DSC_0708.JPG)
 
+:::caution
+Be sure that you use the correct connector for the heating plate.
+:::
+
 ![Header of the connector for heating plate to bioreactor base](images/heating_plate/DSC_0709.JPG)
+
+:::tip
+Try to avoid any contact between case and heating plate using the silicone.
+:::
 
 ![Correct glue between heating plate and its base](images/heating_plate/DSC_0710.JPG)
 
 ### Top
+
+Components:
+
+1. Part `C-1`
+2. Stepper motor
+3. 4 connectors stepper-screws
+4. 4 screws
+5. 4 packing rings
+6. 4 loading cells
+7. 8 screws for loading cell
+8. 8 packing rings for loading cells
+9. 1 PCB for connections between loading cells and bioreactor main PCB
+10. 4 connectors PCB-screws.
+11. 4 screws for PCB
+12. 4 packing rings
 
 ![Components for top](images/top/DSC_0956.JPG)
 
@@ -83,9 +136,21 @@ Tape all parts together **except `Top`** and glue them with _dichloromethane_. W
 
 ![Components for loading cells](images/top/DSC_0935.JPG)
 
+:::note
+To avoid any pressure on load cells, you need to put the packing rings between loading cell and case.
+:::
+
 ![Loading cells connection A](images/top/DSC_0972.JPG)
 
 ![Loading cells connection B](images/top/DSC_0973.JPG)
+
+:::caution
+Take care! There is only one correct conection between the loading cells and case, if you connect for the incorrect saze, you have problems with PCB connection.
+:::
+
+:::note
+Look the hole positions for every loading cell cable.
+:::
 
 ![Final connection for Loading cells](images/top/DSC_0926.JPG)
 
