@@ -4,4 +4,4 @@ The circuit dealing with battery management is largely inspired by the [applicat
 
 The evolution of the battery status can be measured directly by the spectrophotometer.
 
-[battery.svg](battery.svg)
+![battery.svg](battery.svg)
