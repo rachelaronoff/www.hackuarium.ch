@@ -208,6 +208,14 @@ Look the hole positions for every loading cell cable.
 
 ![Front - how to solder the cable connector](images/front/front_solder_cable.JPG)
 
+### Bottom
+
+![Bottom components](images/bottom/bottom_and_components.JPG)
+
+![Components for PCB](images/bottom/bottom_PCB_components.JPG)
+
+![Components for connections](images/bottom/bottom_connections.JPG)
+
 ## Inserting the peristaltic pumps
 
 After finishing the assembly of the base, it is time to start adding the important parts. Take two _peristaltic pumps_ and insert them in the holes made for them in the right wall of the base.
