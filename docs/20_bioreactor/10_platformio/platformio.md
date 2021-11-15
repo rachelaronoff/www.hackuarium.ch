@@ -54,21 +54,6 @@ In order for the USBTiny to have r/w access you should add a USB rule:
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1781", ATTRS{idProduct}=="0c9f", GROUP="plugdev", MODE="0666"
 ```
 
-## Libraries
-
-In this project, we use many non standard libraries. By default PlatformIO IDE will look for them in `<Project>/include`.
-
-If you are using only our project it is easier to directly point this folder to the libraries that are present in the github.
-
-```bash
-$: mkdir ~/libraries/
-$: ln -s ~/git/hackuarium/bioreactor-platformio/BioMain/include/hack/libraries/ ~/libraries/
-```
-
-:::caution
-Time library update v1.5.0 change committed in BioMain including TimeLib.h instead of Time.h resolves bugs on OSX.
-:::
-
 ## That's it
 
 You should now be able to compile the project from PlatformIO IDE.
@@ -85,7 +70,7 @@ $: pio run -e program_via_USBtinyISP --target bootloader
 
 ### Upload the code
 
-Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button or press `Ctrl + Alt + U`:
+Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button or press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>:
 
 ![Upload option](upload.png)
 

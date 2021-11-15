@@ -81,7 +81,7 @@ Tape all parts together **except `Top`** and glue them with _dichloromethane_. W
 
 ### Heating plate base
 
-![Top view of heating plate base](images/heating_plate/DSC_0705.JPG)
+![Top view of heating plate base](images/heating_plate/heating_plate.JPG)
 
 Components:
 
@@ -95,23 +95,23 @@ Components:
 
 Tape all parts together and glue with dochloromethane, in the top of this case you need to paste the isolation and heating plate both like the picture:
 
-![Bottom view of heating plate base](images/heating_plate/DSC_0707.JPG)
+![Bottom view of heating plate base](images/heating_plate/heating_plate_and_cable.JPG)
 
 For the connector, you need to use a width cable that tolerate more than 4 A, and solder correctly:
 
-![Solder cable in the heating plate](images/heating_plate/DSC_0708.JPG)
+![Solder cable in the heating plate](images/heating_plate/heating_plate_solder.JPG)
 
 :::caution
 Be sure that you use the correct connector for the heating plate.
 :::
 
-![Header of the connector for heating plate to bioreactor base](images/heating_plate/DSC_0709.JPG)
+![Header of the connector for heating plate to bioreactor base](images/heating_plate/heating_plate_cable_connector.JPG)
 
 :::tip
 Try to avoid any contact between case and heating plate using the silicone.
 :::
 
-![Correct glue between heating plate and its base](images/heating_plate/DSC_0710.JPG)
+![Correct glue between heating plate and its base](images/heating_plate/heating_plate_silicone.JPG)
 
 ### Top
 
@@ -130,83 +130,83 @@ Components:
 11. 4 screws for PCB
 12. 4 packing rings
 
-![Components for top](images/top/DSC_0956.JPG)
+![Components for top](images/top/top_components.JPG)
 
 #### Loading cells
 
-![Components for loading cells](images/top/DSC_0935.JPG)
+![Components for loading cells](images/top/loading_cell_components.JPG)
 
 :::note
 To avoid any pressure on load cells, you need to put the packing rings between loading cell and case.
 :::
 
-![Loading cells connection A](images/top/DSC_0972.JPG)
+![Loading cells connection A](images/top/loading_cell_connection_A.JPG)
 
-![Loading cells connection B](images/top/DSC_0973.JPG)
+![Loading cells connection B](images/top/loading_cell_connection_B.JPG)
 
 :::caution
-Take care! There is only one correct conection between the loading cells and case, if you connect for the incorrect saze, you have problems with PCB connection.
+Take care! There is only one correct conection between the loading cells and case, if you connect for the incorrect side, you have problems with PCB connection.
 :::
 
 :::note
 Look the hole positions for every loading cell cable.
 :::
 
-![Final connection for Loading cells](images/top/DSC_0926.JPG)
+![Final connection for Loading cells](images/top/loading_cell_final_connection.JPG)
 
 #### Loading cell connection board
 
-![Board connection for Loading cells](images/top/DSC_0950.JPG)
+![Board connection for Loading cells](images/top/loading_cell_PCB_components.JPG)
 
-![Top view for loading cell board](images/top/DSC_0959.JPG)
+![Top view for loading cell board](images/top/loading_cell_PCB_top_view.JPG)
 
-![Board connection for Loading cells](images/top/DSC_0966.JPG)
+![Board connection for Loading cells](images/top/loading_cell_PCB_connection.JPG)
 
 #### Stepper
 
-![Components for stepper](images/top/DSC_0943.JPG)
+![Components for stepper](images/top/stepper_components.JPG)
 
-![First connection for stepper A](images/top/DSC_0989.JPG)
+![First connection for stepper A](images/top/stepper_connection_A.JPG)
 
-![First connection for stepper B](images/top/DSC_0992.JPG)
+![First connection for stepper B](images/top/stepper_connection_B.JPG)
 
-![Connection for stepper in case](images/top/DSC_0995.JPG)
+![Connection for stepper in case](images/top/stepper_connection.JPG)
 
 #### Agitation
 
-![Agitation for stepper](images/top/DSC_0996.JPG)
+![Agitation for stepper](images/top/agitator.JPG)
 
-![Agitation + stepper](images/top/DSC_1000.JPG)
+![Agitation + stepper](images/top/agitator_and_stepper.JPG)
 
 ## Base case
 
-![Case parts for principal base of the bioreactor](images/DSC_0716.JPG)
+![Case parts for principal base of the bioreactor](images/base_case.JPG)
 
 ### Right
 
-![Right components](images/right/DSC_0725.JPG)
+![Right components](images/right/right_components.JPG)
 
-![Right conection A](images/right/DSC_0730.JPG)
+![Right connection A](images/right/right_connection_A.JPG)
 
-![Right conection B](images/right/DSC_0735.JPG)
+![Right connection B](images/right/right_connection_B.JPG)
 
 ### Left
 
-![Left components](images/left/DSC_0747.JPG)
+![Left components](images/left/left_components.JPG)
 
-![Pump connection in left case](images/left/DSC_0748.JPG)
+![Pump connection in left case](images/left/pump_connection.JPG)
 
-![Fan connection in left case](images/left/DSC_0759.JPG)
+![Fan connection in left case](images/left/fan_connection.JPG)
 
-![Left connections](images/left/DSC_0758.JPG)
+![Left connections](images/left/left_all_connections.JPG)
 
 ### Front
 
-![Front components](images/front/DSC_0856.JPG)
+![Front components](images/front/front_components.JPG)
 
-![Front connections](images/front/DSC_0859.JPG)
+![Front connections](images/front/front_connections.JPG)
 
-![Front - how to solder the cable connector](images/front/DSC_0869.JPG)
+![Front - how to solder the cable connector](images/front/front_solder_cable.JPG)
 
 ## Inserting the peristaltic pumps
 
