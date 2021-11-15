@@ -6,6 +6,7 @@ All our devices accept the Serial communication over USB as well as a common set
 
 - lowercases to access menu and commands
 - uppercase to check or change parameters
+- number + uppercase to change I2C connected devices
 
 All the devices include the following commands: `h` for help, `s` for settings and `u` for utilities. Please note that the command has to be followed by either carriage return (CR), line feed (LF) or CR+LF.
 
