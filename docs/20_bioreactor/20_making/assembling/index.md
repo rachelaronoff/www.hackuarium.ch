@@ -178,6 +178,10 @@ Look the hole positions for every loading cell cable.
 
 ![Agitation + stepper](images/top/agitator_and_stepper.JPG)
 
+#### Solder Loading cells
+
+![Soldering loading cells to PCB](images/top/loading_cell_PCB_soldering.JPG)
+
 ## Base case
 
 ![Case parts for principal base of the bioreactor](images/base_case.JPG)
@@ -215,6 +219,60 @@ Look the hole positions for every loading cell cable.
 ![Components for PCB](images/bottom/bottom_PCB_components.JPG)
 
 ![Components for connections](images/bottom/bottom_connections.JPG)
+
+![Connection for PCB - A](images/bottom/bottom_PCB_A.JPG)
+
+![Connection for PCB - B](images/bottom/bottom_PCB_B.JPG)
+
+![Connection for PCB - C](images/bottom/bottom_PCB_C.JPG)
+
+![Connection for foot](images/bottom/bottom_foot.JPG)
+
+![Connection bottom - top](images/bottom/bottom_top_connection.JPG)
+
+![All connections for bottom case](images/bottom/bottom_all_connections.JPG)
+
+## Connect all the cases
+
+### Parts C and D
+
+![All connections for bottom case - A](images/all_together/bottom_left_right_front_back_A.JPG)
+
+![Bottom and front connection](images/all_together/bottom_front.JPG)
+
+![Bottom and front electrical connection](images/all_together/bottom_front_electrical_connection.JPG)
+
+![All connections for bottom case - B](images/all_together/bottom_left_right_front_back_B.JPG)
+
+![All connections for bottom case - C](images/all_together/bottom_left_right_front_back_C.JPG)
+
+![Pump electrical connections](images/all_together/pump_connections.JPG)
+
+![Pump electrical connections](images/all_together/fan_connection.JPG)
+
+![Principal PCB and stepper connection](images/all_together/bottom_stepper_connection.JPG)
+
+![Principal PCB and loading cell connection](images/all_together/bottom_loading_cell_connection.JPG)
+
+![Principal PCB electrical connections](images/all_together/bottom_electrical_connections.JPG)
+
+### Parts A, B, C, and D
+
+![All the cases and parts](images/all_together/all_parts.JPG)
+
+![Top bottom connectors](images/all_together/top_bottom_connectors.JPG)
+
+![Top bottom connection - A](images/all_together/top_bottom_connection_A.JPG)
+
+![Top bottom connection - B](images/all_together/top_bottom_connection_B.JPG)
+
+![Heating plate cable](images/all_together/heating_plate_cable.JPG)
+
+![Top bottom hole](images/all_together/top_bottom_hole.JPG)
+
+![Top bottom connection](images/all_together/top_bottom_connection.JPG)
+
+![Final mount](images/all_together/final_mount.JPG)
 
 ## Inserting the peristaltic pumps
 
