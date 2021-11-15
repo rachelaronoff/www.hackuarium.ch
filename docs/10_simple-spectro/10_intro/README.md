@@ -23,3 +23,37 @@ per spectrophotometer is around $30. However if you want to have a final
 product with an aluminium case and PCBs already assembled, the cost would rather be $90 each if you order 20 of them.
 
 ![spectro.jpg](spectro.jpg)
+
+# Can we do science with this ?
+
+Before trying to explain how it is done in detail we should first answer this first question: can we do science with this tool? When thinking about the design of the spectro, we found a light sensor that converts the light energy to frequency that is linear on a range of nearly 10^6. This means that the luminosity range that we can measure precisely is really large. The experiments we did show that we can obtain reliable and reproducible results.
+
+## Patent blue V
+
+When checking the Beer-Lambert law with the food pigment Patent blue V (E131) we obtain the following results:
+
+![E131.png](E131.png)
+
+The result is rather good knowing that the solutions were simply prepared by adding various volumes (0 to 2 mL) of a concentrated pigmented solution with a 1mL seringe to 100mL of water which is not the most accurate method.
+
+## Escherichia coli
+
+Another feature of the simple-spectrophotometer is that it works on a rechargeable battery (autonomy of 48 hours). Consequently, you can measure a kinetic by placing the device directly inside an incubator, which is not feasible with a regular commercial spectrophotometer.
+
+Optical density (OD) at 600nm is often used in biology to determine the biomass increase versus time. In this experiment we have placed Escherichia coli with cell growing media directly in the spectrophotometer cuvette and placed the spectrophotometer itself on a shaker in the incubator. We can then program it to measure the absorbance every X seconds. In our case we measured the absorbance every 30 minutes (up to 40 measures). The following curve was obtained.
+
+![bacteria-growing.png](bacteria-growing.png)
+
+# Cloning the project
+
+All the code since the first day is open-source and you may get the code on `https://github.com/hackuarium/simple-spectro`.
+
+This project uses SUBMODULES.
+
+In order to clone it use:
+
+`git clone --recurse-submodules https://github.com/hackuarium/simple-spectro`
+
+To update the submodules:
+
+`git submodule update --recursive --remote`
