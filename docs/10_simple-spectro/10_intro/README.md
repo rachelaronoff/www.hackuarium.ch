@@ -28,6 +28,18 @@ product with an aluminium case and PCBs already assembled, the cost would rather
 
 Before trying to explain how it is done in detail we should first answer this first question: can we do science with this tool? When thinking about the design of the spectro, we found a light sensor that converts the light energy to frequency that is linear on a range of nearly 10^6. This means that the luminosity range that we can measure precisely is really large. The experiments we did show that we can obtain reliable and reproducible results.
 
+## What about wavelengths ?
+
+We only use a RGB led so this means that we observe only 3 wavelengths and in fact 3 ranges of wavelengths because the bands are quite broad.
+
+To have an idea here is a representative spectrum of RGB LEDs.
+
+![wavelength.png](wavelength.png)
+
+Concerning OD<sub>600</sub> often used in biology to monitor bacteria growth, the red led is very close (max at around 630 nm). Because we observe light scattering and not absorbance the exact wavelength is not that important. We should just take care to avoid absorbance by the growing media.
+
+[Why is 600nm wavelength recommended for optical density check of bacteria culture, Hassan, Hosni. (2016)](https://www.researchgate.net/post/why_is_600nm_wavelength_recommended_for_optical_density_check_of_bacteria_culture_and_is_there_any_literature_to_back_it).
+
 ## Patent blue V
 
 When checking the Beer-Lambert law with the food pigment Patent blue V (E131) we obtain the following results:
