@@ -1,4 +1,4 @@
-# Phenolphathalein
+# Phenolphathalein 2019.04.10
 
 Kinetic of degradation of phenolphthalein in basic media works well as shown in the [previous experiment](../20190406/README.md).
 
@@ -45,7 +45,7 @@ An exponential regression has been applied for the 4 experiments for all the poi
 
 ## NaOH regression
 
-<img src="NaOHregression.svg" />
+![NaOHregression.svg](NaOHregression.svg)
 
 - y = −0.03705 + 1.069 x
 - r<sup>2</sup> = 0.9983

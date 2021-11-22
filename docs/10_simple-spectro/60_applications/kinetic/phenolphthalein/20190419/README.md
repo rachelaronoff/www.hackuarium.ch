@@ -1,4 +1,4 @@
-# Phenolphathalein
+# Phenolphathalein 2019.04.19
 
 Kinetic of degradation of phenolphthalein in basic media work well as shown in the [previous experiment](../20190406/README.md).
 

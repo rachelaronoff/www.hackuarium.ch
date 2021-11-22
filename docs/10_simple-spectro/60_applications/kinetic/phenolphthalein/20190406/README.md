@@ -1,8 +1,12 @@
-# Phenolphathalein
+---
+title: Procedure
+---
+
+# Phenolphathalein decoloration procedure
 
 [Phenolphthalein](https://en.wikipedia.org/wiki/Phenolphthalein) is a common acid-base indicator used for titration. It is colorless in acidic (pH < 8.2) and fuchsia at a pH overs 8.2. In strongly basic media (pH over 10) it will slowly become colorless.
 
-<img src="reaction.png" />
+![reaction.png](reaction.png)
 
 While the reaction from the neutral form to the doubly negatively charged is fast, going from [ɸɸ]<sup>-2</sup> to [ɸɸOH]<sup>-3</sup> is relatively slow.
 
@@ -107,12 +111,12 @@ An exponential regression has been applied for the 4 experiments and the followi
 
 The corresponding regressions look like follow:
 
-| Experiment | [NaOH]                   | [NaOH]<sub>0</sub> | k      |
-| ---------- | ------------------------ | ------------------ | ------ |
-| 1          | <img src="chart1.svg" /> | 0.3482             | 0.2587 |
-| 2          | <img src="chart2.svg" /> | 0.4614             | 0.1812 |
-| 3          | <img src="chart3.svg" /> | 0.5934             | 0.1134 |
-| 4          | <img src="chart4.svg" /> | 0.6932             | 0.0497 |
+| Experiment | [NaOH]                    | [NaOH]<sub>0</sub> | k      |
+| ---------- | ------------------------- | ------------------ | ------ |
+| 1          | ![chart1.svg](chart1.svg) | 0.3482             | 0.2587 |
+| 2          | ![chart2.svg](chart2.svg) | 0.4614             | 0.1812 |
+| 3          | ![chart3.svg](chart3.svg) | 0.5934             | 0.1134 |
+| 4          | ![chart4.svg](chart4.svg) | 0.6932             | 0.0497 |
 
 Other regressions have been probed, you can see the results for `experiment 2` in the following [pdf](regressions.pdf). The best regression is the exponential one.
 
@@ -134,7 +138,7 @@ A plot of the concentration of NaOH versus k shows a linear correlation:
 - y = −0.02295 + 0.9264 x
 - r<sup>2</sup> = 0.9980
 
-<img src="NaOHregression.svg" />
+![NaOHregression.svg](NaOHregression.svg)
 
 ## Conclusions
 
