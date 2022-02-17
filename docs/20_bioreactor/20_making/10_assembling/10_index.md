@@ -1,4 +1,8 @@
-# Assembling the bioreactor
+---
+sidebar_position: 1
+---
+
+# Components
 
 ## Introduction
 

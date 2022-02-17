@@ -1,6 +1,6 @@
-[Current stock](https://docs.google.com/spreadsheets/d/1mCMbyp-5vMcfMzT4ovZjpsKi10JSWpNIOFcre1nF27s/edit?usp=sharing)
-
 # Bill Of Material (BOM)
+
+[Current stock](https://docs.google.com/spreadsheets/d/1mCMbyp-5vMcfMzT4ovZjpsKi10JSWpNIOFcre1nF27s/edit?usp=sharing)
 
 | Denomination                   | Qty | Unit Price | Supplier                                                                                                                                                                     | Image                                               | Remarks |
 | ------------------------------ | --- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------- |

@@ -80,4 +80,4 @@ You can check upload success in the same terminal:
 
 # The parameters
 
-In order to control the bioreactor you should have a look at the description of the [parameters](parameters.md) (Go Next).
+In order to control the bioreactor you should have a look at the description of the [Parameters](parameters.md) (Go Next).
