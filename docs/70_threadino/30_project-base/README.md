@@ -1,4 +1,4 @@
-#Threadino: a project base to reuse
+# Threadino: a project base to reuse
 
 We created a repository with all the basic code that allows you to program an atmega328p through platformio for a custom project. The code has the base for various threads, I2C, etc. The idea is that you fork the base project to your organisation, and then add your project specific code in the fork.
 
