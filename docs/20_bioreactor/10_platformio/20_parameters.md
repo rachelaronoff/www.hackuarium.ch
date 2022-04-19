@@ -36,17 +36,10 @@ Others variables are consider with aditional modules that you can connect to the
 |     |       | PARAM_PH                | Current pH                                                                                                           |
 |     |       | PARAM_PH_STATE          | 0: Pause 1 : normal acquisition, 2 : purge of pipes, 4: calibration pH=4, 7: calibration pH=7, 10: calibration pH=10 |
 |     |       | PARAM_FLUX_GAS1         |                                                                                                                      |
-|     |       | PARAM_FLUX_GAS2         |                                                                                                                      |
-|     |       | PARAM_FLUX_GAS3         |                                                                                                                      |
-|     |       | PARAM_FLUX_GAS4         |                                                                                                                      |
 |     |       | PARAM_CONDUCTIVITY      |                                                                                                                      |
 | 35  | AJ    | PARAM_TARGET_PH         | Desired pH                                                                                                           |
 | 36  | AK    | PARAM_PH_FACTOR_A       |                                                                                                                      |
 | 37  | AL    | PARAM_PH_FACTOR_B       |                                                                                                                      |
-| 39  | AN    | PARAM_DESIRED_FLUX_GAS1 |                                                                                                                      |
-| 40  | AO    | PARAM_DESIRED_FLUX_GAS2 |                                                                                                                      |
-| 41  | AP    | PARAM_DESIRED_FLUX_GAS3 |                                                                                                                      |
-| 42  | AQ    | PARAM_DESIRED_FLUX_GAS4 |                                                                                                                      |
 | 43  | AR    | PARAM_ANEMO_OFFSET1     | Anemometer calibration: offset of the digital value (digital value when no gas is flowing)                           |
 | 44  | AS    | PARAM_ANEMO_OFFSET2     |                                                                                                                      |
 | 45  | AT    | PARAM_ANEMO_OFFSET3     |                                                                                                                      |
