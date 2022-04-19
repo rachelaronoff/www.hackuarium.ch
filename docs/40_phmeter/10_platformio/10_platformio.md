@@ -17,12 +17,10 @@ All our github projects are always in a folder called `git`
 which is at the first level of the `home` directory. It is followed by the
 name of the github user/organization and finally the project name.
 
-So, to install the project from bash:
+So, go to the project from bash:
 
 ```bash
-mkdir -p ~/git/hackuarium/
-cd ~/git/hackuarium/
-git clone https://github.com/Hackuarium/bioreactor-platformio.git
+cd ~/git/hackuarium/phmeter
 ```
 
 The possibility to clone the project will require that you validate your public key
@@ -36,9 +34,15 @@ In VSCode you need to open `Extensions` tab or press `(CTRL+Shift+X)`, and searc
 
 ## Hardware support for Leonardo 8MHz = LilyPad Arduino USB
 
-The version `6.0.1` of the bioreactor is operating at 8MHz/3V3 instead of the standard 16MHz/5V.
+The pHMeter is operating at 8MHz/3V3 instead of the standard 16MHz/5V.
 
-If you do any mistake and try flashing the bioreactor board as if it was a normal Leonardo, you will be able to flash the program but the USB port will not be recognized anymore afterwards. You will have to reflash the bootloader!!!
+If you do any mistake and try flashing the pHMeter board as if it was a normal Leonardo, you will be able to flash the program but the USB port will not be recognized anymore afterwards. You will have to reflash the bootloader!!!
+
+:::caution
+
+In case that you need to burn the firmware for the pHMeter from factory, you must to use the Lilypad Arduino USB bootloader like first step before upload the code.
+
+:::
 
 ## Using USBtiny
 
@@ -75,6 +79,12 @@ Once you have the bootloader, you can upload your code with `PlatformIO: Upload`
 ![Upload option](upload.png)
 
 You can check upload success in the same terminal:
+
+:::danger
+
+¡UPDATE!
+
+:::
 
 ![Upload success](upload-success.png)
 
