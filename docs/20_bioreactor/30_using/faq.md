@@ -18,18 +18,15 @@ What is the state of the bioreactor ?
 The command `t` will give you a good overview about the current state of the bioreactor
 
 Status: 519 - What is the current status
-- 0: 1 - agitation control
-- 1: 1 - food control
-- 2: 1 - heating
-- 7: 0 - sedimentation
-- 8: 0 - filling pump
+- 0: 1 - heating
+- 1: 1 - agitation control
+- 2: 1 - food control
 - 9: 1 - emptying pump
 
-
 Enabled: 7 - What is currently enabled
-- 0: 1 - agitation control
-- 1: 1 - food control
-- 2: 1 - heating
+- 0: 1 - heating
+- 1: 1 - agitation control
+- 2: 1 - food control
 
 Error: 0 - What are the current errors
 - 0: 0 - pcb probe failed (one wire not answering)
