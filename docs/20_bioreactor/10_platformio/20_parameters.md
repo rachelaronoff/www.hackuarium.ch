@@ -31,23 +31,23 @@ The first 26 parameters (<kbd>A</kbd> -> <kbd>Z</kbd>) will be saved regularly i
 
 Others variables are consider with aditional modules that you can connect to the biorector via RJ12 port.
 
-| ID  | PARAM | PARAM NAME              | DESCRIPTION                                                                                                          |
-| --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
-|     |       | PARAM_PH                | Current pH                                                                                                           |
-|     |       | PARAM_PH_STATE          | 0: Pause 1 : normal acquisition, 2 : purge of pipes, 4: calibration pH=4, 7: calibration pH=7, 10: calibration pH=10 |
-|     |       | PARAM_FLUX_GAS1         |                                                                                                                      |
-|     |       | PARAM_CONDUCTIVITY      |                                                                                                                      |
-| 35  | AJ    | PARAM_TARGET_PH         | Desired pH                                                                                                           |
-| 36  | AK    | PARAM_PH_FACTOR_A       |                                                                                                                      |
-| 37  | AL    | PARAM_PH_FACTOR_B       |                                                                                                                      |
-| 43  | AR    | PARAM_ANEMO_OFFSET1     | Anemometer calibration: offset of the digital value (digital value when no gas is flowing)                           |
-| 44  | AS    | PARAM_ANEMO_OFFSET2     |                                                                                                                      |
-| 45  | AT    | PARAM_ANEMO_OFFSET3     |                                                                                                                      |
-| 46  | AU    | PARAM_ANEMO_OFFSET4     |                                                                                                                      |
-| 47  | AV    | PARAM_ANEMO_FACTOR1     | Anemometer calibration factor: conversion between gas flux (of air) and digital unit                                 |
-| 48  | AW    | PARAM_ANEMO_FACTOR2     |                                                                                                                      |
-| 49  | AX    | PARAM_ANEMO_FACTOR3     |                                                                                                                      |
-| 50  | AY    | PARAM_ANEMO_FACTOR4     |                                                                                                                      |
+| ID  | PARAM | PARAM NAME          | DESCRIPTION                                                                                                          |
+| --- | ----- | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
+|     |       | PARAM_PH            | Current pH                                                                                                           |
+|     |       | PARAM_PH_STATE      | 0: Pause 1 : normal acquisition, 2 : purge of pipes, 4: calibration pH=4, 7: calibration pH=7, 10: calibration pH=10 |
+|     |       | PARAM_FLUX_GAS1     |                                                                                                                      |
+|     |       | PARAM_CONDUCTIVITY  | Current Conductivity                                                                                                 |
+| 35  | AJ    | PARAM_TARGET_PH     | Desired pH                                                                                                           |
+| 36  | AK    | PARAM_PH_FACTOR_A   | pH calibration: conversion factor digital                                                                            |
+| 37  | AL    | PARAM_PH_FACTOR_B   | pH calibration: digital offset value when pH is 4.0                                                                  |
+| 43  | AR    | PARAM_ANEMO_OFFSET1 | Anemometer calibration: offset of the digital value (digital value when no gas is flowing)                           |
+| 44  | AS    | PARAM_ANEMO_OFFSET2 |                                                                                                                      |
+| 45  | AT    | PARAM_ANEMO_OFFSET3 |                                                                                                                      |
+| 46  | AU    | PARAM_ANEMO_OFFSET4 |                                                                                                                      |
+| 47  | AV    | PARAM_ANEMO_FACTOR1 | Anemometer calibration factor: conversion between gas flux (of air) and digital unit                                 |
+| 48  | AW    | PARAM_ANEMO_FACTOR2 |                                                                                                                      |
+| 49  | AX    | PARAM_ANEMO_FACTOR3 |                                                                                                                      |
+| 50  | AY    | PARAM_ANEMO_FACTOR4 |                                                                                                                      |
 
 # State machine
 
@@ -65,7 +65,7 @@ The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some funct
 
 `PARAM_ENABLED` <kbd>Z</kbd> allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, agitation and food control.
 
-| BIT | PARAM_STATUS         | COMMENT                          |
+| BIT | PARAM_ENABLED        | COMMENT                          |
 | --- | -------------------- | -------------------------------- |
 | 0   | FLAG_PID_CONTROL     | enable/disable heating           |
 | 1   | FLAG_STEPPER_CONTROL | enable/disable agitation control |
