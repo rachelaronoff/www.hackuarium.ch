@@ -40,7 +40,7 @@ If you do any mistake and try flashing the pHMeter board as if it was a normal L
 
 :::caution
 
-In case that you need to burn the firmware for the pHMeter from factory, you must to use the Lilypad Arduino USB bootloader like first step before upload the code.
+In case that you need to burn the firmware for the pHMeter from factory, you must to use the Lilypad Arduino USB bootloader like first step before upload the code. (Go to [Burning bootloader](#burning-bootloader) section for solve it).
 
 :::
 
