@@ -5,7 +5,7 @@ The case parts can be found in bag C, as well as all the screws that will be use
 1. 4 x 15mm M3 screws
 2. 4 x male to female(MF) M3 spacers of 8mm height
 3. 4 x 8mm M3 screws
-4. 4 x female to female (FF) M3 spacers of 10mm height
+4. 4 x female to female (FF) M3 spacers of 12mm height
 5. A piece of Velcro®
 6. Top of the case
 7. Shorter sides of the case
