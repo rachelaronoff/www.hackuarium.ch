@@ -113,11 +113,11 @@ The param `PARAM_STATUS` is the main control when you are running the bioreactor
 | BIT | PARAM_ERROR                  | COMMENT                                                    |
 | --- | ---------------------------- | ---------------------------------------------------------- |
 | 0   | FLAG_TEMP_PCB_PROBE_ERROR    | Pcb probe failed (one wire not answering)                  |
-| 1   | FLAG_TEMP_LIQ_PROBE1_ERROR   | Liquid probe in the top failed (one wire not answering)    |
-| 2   | FLAG_TEMP_LIQ_PROBE2_ERROR   | Liquid probe in the bottom failed (one wire not answering) |
+| 1   | FLAG_TEMP_EXT1_PROBE_ERROR   | Liquid probe in the top failed (one wire not answering)    |
+| 2   | FLAG_TEMP_EXT2_PROBE_ERROR   | Liquid probe in the bottom failed (one wire not answering) |
 | 3   | FLAG_TEMP_PCB_RANGE_ERROR    | Temperature of pcb is outside range                        |
-| 4   | FLAG_TEMP_LIQ_RANGE1_ERROR   | Temperature of liquid in the top is outside range          |
-| 5   | FLAG_TEMP_LIQ_RANGE2_ERROR   | Temperature of liquid in the bottom is outside range       |
+| 4   | FLAG_TEMP_EXT1_RANGE_ERROR   | Temperature of liquid in the top is outside range          |
+| 5   | FLAG_TEMP_EXT2_RANGE_ERROR   | Temperature of liquid in the bottom is outside range       |
 | 6   | FLAG_TEMP_TARGET_RANGE_ERROR | Target temperature is outside range                        |
 | 7   | FLAG_WEIGHT_RANGE_ERROR      | Weight is outside range                                    |
 
