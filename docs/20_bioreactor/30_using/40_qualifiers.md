@@ -4,11 +4,11 @@ Each device has an identifier that allows to recognize it's kind and should be u
 
 A qualifier is composed of 2 bytes and therefore a number from 0 to 65535.
 
-It can be set using the `uq`command.
+It can be set using the `uq` command.
 
-You can also display this number as 2 bytes and therefore as 2 ascii code.
+You can also display this number as 2 bytes and therefore as 2 ASCII code.
 
-In the case of the bioreactor the first ascii code is `$`.
+In the case of the bioreactor the first ASCII code is `$`.
 
 You may for example give the following code to the bioreactor
 

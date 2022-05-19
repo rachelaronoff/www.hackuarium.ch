@@ -25,7 +25,7 @@ The first 26 parameters (<kbd>A</kbd> -> <kbd>Z</kbd>) will be saved regularly i
 | 30  | AE  | PARAM_WEIGHT_EMPTY            | Weight calibration: digital offset value when bioreactor is empty   |
 | 31  | AF  | PARAM_SEDIMENTATION_TIME      | Number of minutes to wait without rotation before emptying          |
 | 32  | AG  | PARAM_FILLED_TIME             | Number of minutes to stay in the filled state                       |
-| 51  | AZ  | PARAM_ENABLED                 | Enabled service (set by user)                                       |
+| 51  | AZ  | PARAM_STATUS                 | Enabled service (set by user)                                       |
 
 ## Other planned parameters
 
