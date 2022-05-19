@@ -49,7 +49,7 @@ Others variables are consider with aditional modules that you can connect to the
 | 49  | AX    | PARAM_ANEMO_FACTOR3 |                                                                                                                      |
 | 50  | AY    | PARAM_ANEMO_FACTOR4 |                                                                                                                      |
 
-# State machine
+## State machine
 
 There are 3 important variables that will manage the state of the bioreactor:
 
@@ -61,7 +61,7 @@ There are 3 important variables that will manage the state of the bioreactor:
 The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some function of the bioreactor. It is for example possible to disable heating while keeping all the other functionalities active.
 :::
 
-## PARAM_ENABLED
+### PARAM_ENABLED
 
 `PARAM_ENABLED` <kbd>Z</kbd> allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, agitation and food control.
 
@@ -78,7 +78,7 @@ The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some funct
 If you want to control everything the value of `PARAM_ENABLED` should be 63.
 :::
 
-## PARAM_STATUS
+### PARAM_STATUS
 
 `PARAM_STATUS` <kbd>AZ</kbd> will display the currently active functionalities. It is composed of different bits that can
 be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
@@ -106,7 +106,7 @@ The status is currently the <kbd>AZ</kbd> parameter. You can change the status b
 The param `PARAM_STATUS` is the main control when you are running the bioreactor protocol, be sure that those manual changes do not affect your actual test.
 :::
 
-## PARAM_ERROR
+### PARAM_ERROR
 
 `PARAM_ERROR` <kbd>Y</kbd> will display any error in the bioreactor, you can check the code of the error with this table:
 

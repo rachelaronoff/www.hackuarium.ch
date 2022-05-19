@@ -1,12 +1,23 @@
+---
+sidebar_position: 1
+---
+
 # Starting a new bioreactor
 
 When you have a new bioreactor you should start by configuring it. You may connect using a
 terminal through the serial port.
 
-You may as well use the Visual Studio Code (with PlatformIO extension) application to directly connect to the bioreactor through serial (press (Mac) <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd>. (PC) <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd> and search for `serial`).
+You may as well use the Visual Studio Code (with PlatformIO extension) application to directly connect to the bioreactor through serial (press (Mac) <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd> or (PC/Linux) <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd> and search for `serial`).
 
-The menu is accessible using the `h` instruction but you should not forget to add a `CR + LF` after each
-instruction (this is aut).
+The menu is accessible using the `h` instruction.
+
+:::important
+If you can't open the serial monitor in VSCode with PlatformIO extension, please make sure that you have opened the project.
+:::
+
+:::caution
+You should not forget to add a `CR + LF` after each instruction, this is automatically in VScode Serial Monitor but you need to consider it if you don't have an answer in the serial monitor).
+:::
 
 ## Initializing parameters
 
@@ -14,8 +25,7 @@ Connect via the terminal and reset all the parameters to the default parameters:
 
 `ur1234`
 
-It is also important to set a unique qualifier for the bioreactor. You should fill the [list](40_qualifiers.md) with a free
-code.
+It is also important to set a unique qualifier for the bioreactor. You should fill the [list](40_qualifiers.md) with a free code.
 
 ## Setup the weight
 

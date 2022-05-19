@@ -78,6 +78,6 @@ You can check upload success in the same terminal:
 
 ![Upload success](upload-success.png)
 
-# The parameters
+## The parameters
 
 In order to control the bioreactor you should have a look at the description of the [Parameters](20_parameters.md) (Go Next).

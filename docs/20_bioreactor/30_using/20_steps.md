@@ -1,4 +1,4 @@
-##
+# Steps
 
 We create a compact way to describe a set of instruction
 
@@ -20,7 +20,7 @@ Flags:
 | 4   | OUTPUT 3     | enable/disable output 3          |
 | 5   | OUTPUT 4     | enable/disable output 4          |
 
-### Actions
+## Actions
 
 0xxxx yyy yyyy yyyy
 
@@ -34,7 +34,7 @@ Flags:
 | 5   | 0101 | Wait for temperature change (continue if delta < yyy °C/100) |
 | 8   | 1000 | Set all the flags                                            |
 
-### Change parameters
+## Change parameters
 
 1xxxx yyy yyyy yyyy
 
@@ -42,7 +42,7 @@ Flags:
   - 4: Target temperature (in °C)
 - yyy yyyy yyyy: the new value (0 to 2047)
 
-### Example
+## Example
 
 Using two peristaltic pumps to remove bacteria and add fresh media
 
