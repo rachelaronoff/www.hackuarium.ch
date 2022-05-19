@@ -87,7 +87,7 @@ https://github.com/Hackuarium/legoino-device-information
 
 In order to set the id of a device you need to multiply the device kind by 256 and add a unique ID from 0 to 255. It is advisable to have a code that can be represented as an ASCII text.
 
-```
+```text
 Dec Hex    Dec Hex    Dec Hex  Dec Hex  Dec Hex  Dec Hex   Dec Hex   Dec Hex
   0 00 NUL  16 10 DLE  32 20    48 30 0  64 40 @  80 50 P   96 60 `  112 70 p
   1 01 SOH  17 11 DC1  33 21 !  49 31 1  65 41 A  81 51 Q   97 61 a  113 71 q
