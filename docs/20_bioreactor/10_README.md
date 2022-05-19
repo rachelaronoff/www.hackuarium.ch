@@ -1,5 +1,7 @@
 ---
 slug: /bioreactor
+title: Bioreactor
+id: bioreactor
 ---
 
 # Goal of the project
