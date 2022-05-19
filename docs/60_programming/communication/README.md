@@ -70,21 +70,22 @@ The id is a number between -32768 and 32767 (16 bits). The first 8 bits indicate
 
 Currently the following device have been defined:
 
-| Ascii decimal | Letter | kind          |
+| ASCII decimal | Letter | Kind          |
 | ------------- | ------ | ------------- |
-| 66            | B      | Beemos device |
-| 67            | C      | Computer      |
-| 36            | $      | OpenBio       |
-| 54            | 6      | Bioreactor    |
-| 83            | S      | OpenSpectro   |
-| 84            | T      | SimpleSpectro |
-| 35            | #      | Solar2015     |
+| 66 (0x42)     | B      | Beemos device |
+| 67 (0x43)     | C      | Computer      |
+| 36 (0x24)     | $      | OpenBio       |
+| 54 (0x36)     | 6      | Bioreactor    |
+| 83 (0x53)     | S      | OpenSpectro   |
+| 84 (0x54)     | T      | SimpleSpectro |
+| 35 (0x23)     | #      | Solar2015     |
+| 80 (0x50)     | P      | PHMeter       |
 
 All the information about the parameters are available at:
 
 https://github.com/Hackuarium/legoino-device-information
 
-In order to set the id of a device you need to multiply the device kind by 256 and add a unique ID from 0 to 255. It is advisable to have a code that can be represented as an ascii text.
+In order to set the id of a device you need to multiply the device kind by 256 and add a unique ID from 0 to 255. It is advisable to have a code that can be represented as an ASCII text.
 
 ```
 Dec Hex    Dec Hex    Dec Hex  Dec Hex  Dec Hex  Dec Hex   Dec Hex   Dec Hex
