@@ -30,7 +30,7 @@ in github!
 
 ## Installing the PlatformIO plugin
 
-In VSCode you need to open `Extensions` tab or press `(CTRL+Shift+X)`, and search ´PlatformIO IDE´ to install it:
+In VSCode you need to open `Extensions` tab or press (PC) <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>X</kbd>, (Mac) <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>X</kbd> and search ´PlatformIO IDE´ to install it:
 
 ![PlatformIO IDE](platformio.png)
 
