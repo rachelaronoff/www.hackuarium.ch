@@ -47,7 +47,7 @@ the weight is either 20% under the minimal value or 20% over the maximal value a
 In order to activate the bioreactor you need to enable functions. Currently there are 3 functions
 
 - Agitation (value 1)
-- Food contorl (value 2)
+- Food control (value 2)
 - Temperature control (value 3)
 
 You may enable the functionnablities by setting the parameter `AZ`. To activate all the functionnalities

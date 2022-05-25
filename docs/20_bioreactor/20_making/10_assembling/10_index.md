@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Introduction
 
-This manual describes how to assemble a functionnal bioreactor once the PCB plate has been ready and the pieces for the casing have been laser cutted.
+This manual describes how to assemble a functional bioreactor once the PCB plate has been ready and the pieces for the casing have been laser cutted.
 
 The bioreactor is composed of three distinct layers, as can be seen on the following image:
 
