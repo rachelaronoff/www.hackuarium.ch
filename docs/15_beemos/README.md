@@ -6,4 +6,4 @@ slug: /beemos
 
 Bee monitoring system
 
-![logoBeeMoS.png](logoBeeMoS.png){width=40%}
+![logoBeeMoS.png](logoBeeMoS.png)
