@@ -38,18 +38,58 @@ In VSCode you need to open `Extensions` tab or press (PC) <kbd>Ctrl</kbd>+<kbd>â
 
 The version `6.0.1` of the bioreactor is operating at 8MHz/3V3 instead of the standard 16MHz/5V.
 
+:::warning
 If you do any mistake and try flashing the bioreactor board as if it was a normal Leonardo, you will be able to flash the program but the USB port will not be recognized anymore afterwards. You will have to reflash the bootloader!!!
+:::
 
 ## Using USBtiny
 
-By default some Linux versions will only give you a USB readonly access and will prevent you from burning the bootloader.
+By default some Linux versions will only give you a USB readonly access and will prevent you from burning the bootloader. You can implent two options to solve this problem:
 
-In order for the USBTiny to have r/w access you should add a USB rule:
+1. Check the ID for USBTinyISP:
+
+```bash
+$ lusb
+```
+
+- You need to find USBtiny in the prompt:
+
+```bash
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub 
+Bus 001 Device 005: ID 8087:0a2b Intel Corp. 
+Bus 001 Device 006: ID 047f:0115 Plantronics, Inc. Voyager Legend 
+Bus 001 Device 003: ID 046d:c31c Logitech, Inc. Keyboard K120 
+Bus 001 Device 002: ID 046d:c011 Logitech, Inc. Optical MouseMan 
+Bus 001 Device 007: ID 1781:0c9f Multiple Vendors USBtiny 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+```
+
+- For this case, USBtiny is: **Bus 001 Device 007: ID 1781:0c9f Multiple Vendors USBtiny**.
+
+- Show Device permissions:
+
+```bash
+$ ls -al /dev/bus/usb/001/007
+```
+
+- If you have a similar response like this:
+
+```bash
+crw-rw---- 1 root root 189, 6 Okt 2 09:45 /dev/bus/usb/001/007
+```
+
+- You need to change permissions:
+
+```bash
+$ ls -al /dev/bus/usb/001/007
+```
+
+2. In order for the USBTiny to have r/w access you should add a USB rule:
 
 ```bash
 # UDEV rule for Arduino ISP R3 programmer board,
 # to prevent having to run Arduino IDE as root to get it to program.
-# Copy this file to /etc/udev/rules.d so
+# Copy this file to /etc/udev/rules.d with the name 99-USBtiny.rules
 
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1781", ATTRS{idProduct}=="0c9f", GROUP="plugdev", MODE="0666"
 ```
@@ -70,7 +110,7 @@ $: pio run -e program_via_USBtinyISP --target bootloader
 
 ### Upload the code
 
-Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button or press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>:
+Once you have the bootloader, you can remove USBtinyISP and upload your code using USB cable directly between bioreactor and laptop with `PlatformIO: Upload` button or press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>:
 
 ![Upload option](upload.png)
 
