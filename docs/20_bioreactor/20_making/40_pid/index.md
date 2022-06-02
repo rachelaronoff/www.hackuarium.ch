@@ -1,4 +1,6 @@
-# Connecting the plate
+# Heating plate
+
+## Connecting the plate
 
 The heating plate is a standard MK3 plate used in 3D printers. It is a square of 214 mm of side.
 
