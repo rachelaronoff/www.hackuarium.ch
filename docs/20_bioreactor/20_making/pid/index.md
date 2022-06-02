@@ -51,7 +51,7 @@ In order to turn on the heating you should check the following parameters:
 - A - The liquid temperature on the top. It should be between 1000 and 6000 (10 °C to 60 °C)
 - B - The liquid temperature on the bottom. It should be between 1000 and 6000 (10 °C to 60 °C)
 - C - The temperature of the PCB (Printed Circuit Board). It should be between 1000 and 7000
-- D - The target temperature. It should be between 1000 and 6000 (10 to 60°C)
+- E - The target temperature. It should be between 1000 and 6000 (10 to 60°C)
 - FLAG_PID_CONTROL - The PARAM_STATUS bit FLAG_PID_CONTROL should be 1
 
 The heating will also depend of the status of the weight.
@@ -60,9 +60,13 @@ The heating will also depend of the status of the weight.
 
 Here are the important parameters:
 
-| PARAM_TEMP_LIQ | 0 | A | temperature of the solution |
-| PARAM_TEMP_PCB | 1 | B | temperature of the heating plate |
-| PARAM_TEMP_TARGET | 26 | AA | target temperature of the liquid |
+| ID  | P   | NAME                          | DESCRIPTION                                                         |
+| --- | --- | ----------------------------- | ------------------------------------------------------------------- |
+| 0   | A   | PARAM_TEMP_EXT1               | Temperature of the solution (top)                                   |
+| 1   | B   | PARAM_TEMP_EXT2               | Temperature of the solution (bottom)                                |
+| 2   | C   | PARAM_TEMP_PCB                | Temperature of the PCB                                              |
+| 4   | E   | PARAM_TEMP_TARGET             | Target temperature of the liquid (in °C)                            |
 
-In order to disable heating just put at target temperature for the board of 0.
-`AA0`
+:::tip
+In order to disable heating just put at target temperature for the board of 0 (write in the console `E0` and press <kbd>Enter</kbd>).
+:::
