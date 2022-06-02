@@ -1,3 +1,5 @@
+# Stepper
+
 ## DRV8811
 
 The PWM chopping current is set by a comparator, which compares the voltage across a current-sense resistor,
@@ -27,8 +29,8 @@ R2 = 3300 \* 0.64 / (3.3 - 0.64)
 
 R2 = 640Ω
 
-Stepper 17hs13-0404s1: 0.4A, 12V
+Stepper [17hs13-0404s1](https://www.omc-stepperonline.com/download/17HS13-0404S1.pdf): 0.4A, 12V
 
 For 0.2A to keep it really cold:
 
-R2 = 150Ω (see ticket [#27](https://github.com/Hackuarium/bioreactor/issues/27)
+R2 = 150Ω (see ticket [#27](https://github.com/Hackuarium/bioreactor/issues/27) (finally set is Rsense = 0.1 Ohm and Rlim = 180 Ohm)
