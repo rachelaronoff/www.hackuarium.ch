@@ -13,6 +13,7 @@ In our case we will power the plate in 12v and we will connect them in parallel.
 
 It is also important to put 2 leds (just to be sure one of them turn on even if you power the plate in the opposite way)
 and a resistor of 1kΩ (10kΩ would give a much less bright light).
+
 This will allow to see when the plate is turned on. Nice to debug !
 
 ![leds.jpg](leds.jpg)
@@ -24,7 +25,7 @@ Note that the Board is operating at 3V3 and the PID is powered in 12V. Thus the 
 current must be picked up carefully to have a low threshold voltage Vgs and a low Rds channel resistance at this
 operating 3v3 voltage. Good matches are provided [here on Mouser](http://www.mouser.ch/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sf?P=1z0yra8Z1z0y182Z1z0z7ptZ1yzxnagZ1yw76g4Z1yw76ckZ1yw76gb&Rl=ax1sfZgjdhsdZ1yjepp1Z1yjenlnSGTax1sfZgjdhp3Z1yw78huZ1y9kq41SGT&Keyword=MOSFET&OrgTerm=mosfet&FS=True&Ns=Pricing|0).
 
-We have chosen the BUK965R8-100E for its steady Rds at low Vgs (down to 2V) even for high currents (up to 50A).
+We have chosen the IPB80N03S4L-03 for its steady Rds (3.4 mOhm max.) at low Vgs (Vgs(th) 1.6 V typ.) even for high currents (up to 80A).
 
 # Limit values
 
