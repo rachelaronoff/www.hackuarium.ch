@@ -1,27 +1,29 @@
 # Connecting the plate
 
-The heating plate is a standard MK3 plate used in 3D printers. It is a square of 214mm of side.
+The heating plate is a standard MK3 plate used in 3D printers. It is a square of 214 mm of side.
 
-It is composed on 2 resistors of 2.4Ω and there are 2 ways to connect them:
+It is composed on 2 resistors of 2.4 Ω and there are 2 ways to connect them:
 
-- in serie : you have a resistor of 4.8Ω and this will be used to power in 24v
-- in parallel : you have a resistor of 1.2Ω and this will be used when powerred in 12v
+- in serie : you have a resistor of 4.8 Ω and this will be used to power in 24 V
+- in parallel : you have a resistor of 1.2 Ω and this will be used when powerred in 12 V
 
-In our case we will power the plate in 12v and we will connect them in parallel. See the picture for more information.
+In our case we will power the plate in 12 V and we will connect them in parallel. See the picture for more information.
 
 ![connection.jpg](connection.jpg)
 
-It is also important to put 2 leds (just to be sure one of them turn on even if you power the plate in the opposite way)
-and a resistor of 1kΩ (10kΩ would give a much less bright light).
+:::tip
+It is also important to put 2 LEDs (just to be sure one of them turn on even if you power the plate in the opposite way)
+and a resistor of 1 kΩ (10 kΩ would give a much less bright light).
 
-This will allow to see when the plate is turned on. Nice to debug !
+This will allow to see when the plate is turned on. Nice to debug!
+:::
 
 ![leds.jpg](leds.jpg)
 
-With a resistance of 1.2Ω in 12v we will need 10A. This is the limit of the powersuppy and it would be nice if
+With a resistance of 1.2 Ω in 12 V we will need 10A. This is the limit of the powersupply and it would be nice if
 we don't use permanently full power.
 
-Note that the Board is operating at 3V3 and the PID is powered in 12V. Thus the PowerFET used to deliver the required
+Note that the Board is operating at 3V3 and the PID is powered in 12 V. Thus the PowerFET used to deliver the required
 current must be picked up carefully to have a low threshold voltage Vgs and a low Rds channel resistance at this
 operating 3v3 voltage. Good matches are provided [here on Mouser](http://www.mouser.ch/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sf?P=1z0yra8Z1z0y182Z1z0z7ptZ1yzxnagZ1yw76g4Z1yw76ckZ1yw76gb&Rl=ax1sfZgjdhsdZ1yjepp1Z1yjenlnSGTax1sfZgjdhp3Z1yw78huZ1y9kq41SGT&Keyword=MOSFET&OrgTerm=mosfet&FS=True&Ns=Pricing|0).
 
