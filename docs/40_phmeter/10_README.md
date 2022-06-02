@@ -1,5 +1,7 @@
 ---
 slug: /phmeter
+title: Introduction
+id: phmeter
 ---
 
 # Goal of the project
@@ -10,7 +12,7 @@ Recently, the open-source and open-hardware community has been involved in the c
 
 Our goal was to create a simple pHMeter and conductometer reliable, precise and cheap.
 
-# Cloning the project
+## Cloning the project
 
 All the code since the first day is open-source and you may get the code on `https://github.com/Hackuarium/phmeter`.
 
