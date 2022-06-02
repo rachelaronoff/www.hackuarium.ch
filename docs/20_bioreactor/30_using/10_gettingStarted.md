@@ -4,8 +4,7 @@ sidebar_position: 1
 
 # Starting a new bioreactor
 
-When you have a new bioreactor you should start by configuring it. You may connect using a
-terminal through the serial port.
+When you have a new bioreactor you should start by configuring it. You may connect using a terminal through the serial port.
 
 You may as well use the Visual Studio Code (with PlatformIO extension) application to directly connect to the bioreactor through serial (press (Mac) <kbd>⌘</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd> or (PC/Linux) <kbd>Ctrl</kbd>+<kbd>⇧</kbd>+<kbd>P</kbd> and search for `serial`).
 
@@ -39,12 +38,12 @@ You should do the following step in order to callibrate the weight:
 
 You may now check the reproducibility and the weight in g of any object using `wt`
 
-It is important to note that an error (stored in [PARAM_ERROR](../10_platformio/20_parameters.md#PARAM_ERROR) will be generated if
+It is important to note that an error (stored in [PARAM_ERROR](../10_platformio/20_parameters.md#param_error)) will be generated if
 the weight is either 20% under the minimal value or 20% over the maximal value and this should stop all the functions.
 
 ## The main parameters
 
-In order to activate the bioreactor you need to enable functions. Currently there are 3 functions
+In order to activate the bioreactor you need to enable functions. Currently there are 3 functions:
 
 - Agitation (value 1)
 - Food control (value 2)

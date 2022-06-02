@@ -22,7 +22,7 @@ Flags:
 
 ## Actions
 
-0xxxx yyy yyyy yyyy
+0xxx x yyy yyyy yyyy
 
 |     | xxxx | Action                                                       |
 | --- | ---- | ------------------------------------------------------------ |
@@ -36,15 +36,15 @@ Flags:
 
 ## Change parameters
 
-1xxxx yyy yyyy yyyy
+1xxx x yyy yyyy yyyy
 
 - xxxx the parameter (0 -> 15)
-  - 4: Target temperature (in °C)
+  - 0: Target temperature (in °C)
 - yyy yyyy yyyy: the new value (0 to 2047)
 
 ## Example
 
-Using two peristaltic pumps to remove bacteria and add fresh media
+Using two peristaltic pumps to remove bacteria and add fresh media:
 
 | Step | Instruction                  | Explanation                    |
 | ---- | ---------------------------- | ------------------------------ |
@@ -58,8 +58,7 @@ Using two peristaltic pumps to remove bacteria and add fresh media
 | 7    | 0 0100 000 0110 0100 (8292)  | Weight increase 100%           |
 | 8-15 | 0 0000 000 0000 0000 (0)     | Do nothing                     |
 
-Changing temperature and turning on / off a light (on IO3).
-We simulate a day / night cycle
+Changing temperature and turning on / off a light (on IO3). We simulate a day / night cycle:
 
 | Step | Instruction                  | Explanation                    |
 | ---- | ---------------------------- | ------------------------------ |
