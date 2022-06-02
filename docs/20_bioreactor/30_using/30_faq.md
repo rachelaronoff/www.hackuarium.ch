@@ -51,7 +51,7 @@ Pumping in         |   On    |   On    | Last till [PARAM_WEIGHT_MAX](../10_plat
 
 There are many differents problems that you can find with the weight reading, but you can check this steps:
 
-1. The load cells work in one direction, so you need to check if you place in the wrong direction every load cell.
+1. The load cells work in one direction, so you need to check if you place in the wrong direction every load cell (see note).
 
 2. Maybe you don't put the solder jumper between LGND and GND near to HX711 (SJ1 in version 6.0.1). In this case, to avoid a floating ground you need to made the solder jumper in that point.
 
