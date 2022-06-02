@@ -25,18 +25,18 @@ Note that the Board is operating at 3V3 and the PID is powered in 12V. Thus the 
 current must be picked up carefully to have a low threshold voltage Vgs and a low Rds channel resistance at this
 operating 3v3 voltage. Good matches are provided [here on Mouser](http://www.mouser.ch/Semiconductors/Discrete-Semiconductors/Transistors/MOSFET/_/N-ax1sf?P=1z0yra8Z1z0y182Z1z0z7ptZ1yzxnagZ1yw76g4Z1yw76ckZ1yw76gb&Rl=ax1sfZgjdhsdZ1yjepp1Z1yjenlnSGTax1sfZgjdhp3Z1yw78huZ1y9kq41SGT&Keyword=MOSFET&OrgTerm=mosfet&FS=True&Ns=Pricing|0).
 
-We have chosen the IPB80N03S4L-03 for its steady Rds (3.4 mOhm max.) at low Vgs (Vgs(th) 1.6 V typ.) even for high currents (up to 80A).
+We have chosen the [IPB80N03S4L-03](https://www.infineon.com/dgdl/Infineon-IPB80N03S4L-03-DataSheet-v02_01-EN.pdf?fileId=5546d4626cb27db2016ccd4c03921b4c) for its steady Rds (3.4 mOhm max.) at low Vgs (Vgs(th) 1.6 V typ.) even for high currents (up to 80A).
 
-# Limit values
+## Limit values
 
 In order to be able to heat the following conditions have to be met:
 
-- PCB temperature probe (one-wire) must be working and the temperature must be between 10 and 70°C
-- Liquid temperature probe (one-wire) must be connected and the temperature must be between 10 and 60°C
+- PCB temperature probe (one-wire) must be working and the temperature must be between 10 and 70 °C
+- Liquid temperature probe (one-wire) must be connected and the temperature must be between 10 and 60 °C
 
-The maximal power is 80% of full power that corresponds to around 8A.
+The maximal power is 80% of full power that corresponds to around 8 A.
 
-The following parameters are define in PID.ino
+The following parameters are define in _PIDThread.cpp_
 
 - SAFETY_MAX_PCB_TEMP 7000
 - SAFETY_MIN_PCB_TEMP 1000
@@ -44,18 +44,19 @@ The following parameters are define in PID.ino
 - SAFETY_MIN_LIQ_TEMP 1000
 - PID_OUTPUT_LIMIT 200
 
-# Enabling heating
+## Enabling heating
 
 In order to turn on the heating you should check the following parameters:
 
-- A - The liquid temperature. It should be between 1000 and 6000 (10°C to 60°C)
-- B - The temperature of the PCB (Printed Circuit Board). It should be between 1000 and 7000
-- AA - The target temperature. It should be between 1000 and 6000 (10 to 60°C)
+- A - The liquid temperature on the top. It should be between 1000 and 6000 (10 °C to 60 °C)
+- B - The liquid temperature on the bottom. It should be between 1000 and 6000 (10 °C to 60 °C)
+- C - The temperature of the PCB (Printed Circuit Board). It should be between 1000 and 7000
+- D - The target temperature. It should be between 1000 and 6000 (10 to 60°C)
 - FLAG_PID_CONTROL - The PARAM_STATUS bit FLAG_PID_CONTROL should be 1
 
 The heating will also depend of the status of the weight.
 
-# Disabling heating
+## Disabling heating
 
 Here are the important parameters:
 
