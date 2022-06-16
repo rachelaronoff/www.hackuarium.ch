@@ -26,11 +26,12 @@ Current pin assignments:
 
 | GPIO PIN  | PURPOSE          | DESCRIPTION                                                                            | 
 | --------- | ---------------- | --------------------------------------------------- |
+| 0         | Battery level    | Analog read battery level using voltage resistor with R1=R2=220kOhm. First tests indicate a value of  2895 for a full NCR18650B battery (4.12V) , and a value of 1869 when the battery is empty (2.615V).
 | 1         | Not assigned yet |
 | 2         | Not assigned yet |
 | 3         | I2C SDA          | I2C (SDA+SCL) is used to control Si7021 temperature and humidity sensor as well as other devices (scale, light measurements...)
 | 4         | I2C SCL          | I2C can be set on any pair of GPIO pins, the code must explicitly specify those pins (with Wire.begin(SDA,SCL) *e.g.* Wire.begin(3,4)
-| 5         | Not assigned yet |
+| 5         | Not assigned yet | Caution: this pin is on ADC2 and by default there are conflicts when WiFi is used in code.
 | 6         | 1-Wire           | The 1-Wire protocol allows to connect multiple [DS18B20](https://datasheets.maximintegrated.com/en/ds/DS18B20.pdf) temperature probes to the same pin. The external temperature probe is connected to this pin.
 | 7         | Builtin LED      | This pin is used for the "Blink" task which is the lowest priority task blinking the LED. It allows to detect in case the board is in a frozen state or reboots frequently by observing the LED blink pattern (or absence of blinking). 
 | 8         | 1-Wire | The external temperature probe is connected to this pin.
