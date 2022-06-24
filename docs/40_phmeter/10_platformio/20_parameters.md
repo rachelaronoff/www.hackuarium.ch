@@ -6,20 +6,21 @@
 
 :::
 
-All the functionalities and the communication between processes is ensured by a common list of parameters.
-The first 26 parameters (<kbd>A</kbd> -> <kbd>Z</kbd>) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
+All the functionalities and the communication between processes are ensured by a common list of parameters.
+
+The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
 
 | ID  | P   | NAME                          | DESCRIPTION                                                         |
 | --- | --- | ----------------------------- | ------------------------------------------------------------------- |
 | 0   | A   | PARAM_TEMP_EXT1               | Temperature of the solution (top)                                   |
 | 1   | B   | PARAM_TEMP_EXT2               | Temperature of the solution (bottom)                                |
-| 2   | C   | PARAM_TEMP_PCB                | Temperature of the PCB                                              |
-| 3   | D   | PARAM_PID                     | Current heating power                                               |
-| 4   | E   | PARAM_TEMP_TARGET             | Target temperature of the liquid (in °C)                            |
-| 5   | F   | PARAM_WEIGHT                  | Weight (In unit of the balance)                                     |
-| 6   | G   | PARAM_WEIGHT_G                | Weight (gr)                                                         |
-| 7   | H   | PARAM_WEIGHT_SINCE_LAST_EVENT | Save the last weight to avoid problems when there are power outages |
-| 8   | I   | PARAM_WEIGHT_MAX              | Weight value for high level                                         |
+| 2   | C   |                               |                                                                     |
+| 3   | D   |                      |                                                |
+| 4   | E   |              |                             |
+| 5   | F   | PARAM_PH                  | pH (raw values)                                     |
+| 6   | G   | PARAM_PH_SI                | pH (International System of Units)                                                         |
+| 7   | H   | PARAM_PH_SINCE_LAST_EVENT | Save the last pH to avoid problems when there are power outages |
+| 8   | I   |               |                                          |
 | 22  | W   | PARAM_CURRENT_STEP            | Enable protocol of bioreactor                                       |
 | 23  | X   | PARAM_CURRENT_WAIT_TIME       | Waiting time before start protocol                                  |
 | 24  | Y   | PARAM_ERROR                   | Error in the system                                                 |
