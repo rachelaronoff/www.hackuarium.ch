@@ -1,10 +1,9 @@
 ---
-slug: /phmeter
-title: Introduction
 id: phmeter
+title: Introduction
+description: pH Meter page description
+slug: /phmeter
 ---
-
-# Goal of the project
 
 This project was done at the [Hackuarium](http://www.hackuarium.ch/en/) association, a DIY biology hacking-space and open laboratory located in Ecublens (Switzerland). Feel free to [contact us](https://form.jotformeu.com/71600609780354) if you would like additional information or would like to buy a fully built and tested pHMeter.
 
