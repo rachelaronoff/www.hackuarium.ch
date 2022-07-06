@@ -10,29 +10,24 @@ All the functionalities and the communication between processes are ensured by a
 
 The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
 
-| ID  | P   | NAME                          | DESCRIPTION                                                         |
-| --- | --- | ----------------------------- | ------------------------------------------------------------------- |
-| 0   | A   | PARAM_TEMP_EXT1               | Temperature of the solution (top)                                   |
-| 1   | B   | PARAM_TEMP_EXT2               | Temperature of the solution (bottom)                                |
-| 2   | C   |                               |                                                                     |
-| 3   | D   |                      |                                                |
-| 4   | E   |              |                             |
-| 5   | F   | PARAM_PH                  | pH (raw values)                                     |
-| 6   | G   | PARAM_PH_SI                | pH (International System of Units)                                                         |
-| 7   | H   | PARAM_PH_SINCE_LAST_EVENT | Save the last pH to avoid problems when there are power outages |
-| 8   | I   |               |                                          |
-| 22  | W   | PARAM_CURRENT_STEP            | Enable protocol of bioreactor                                       |
-| 23  | X   | PARAM_CURRENT_WAIT_TIME       | Waiting time before start protocol                                  |
-| 24  | Y   | PARAM_ERROR                   | Error in the system                                                 |
-| 25  | Z   | PARAM_ENABLED                 | Currently active service                                            |
-| 26  | AA  | PARAM_STEPPER_SPEED           | Motor speed                                                         |
-| 27  | AB  | PARAM_STEPPER_STEPS           | Number of steps before changing the direction of the motor          |
-| 28  | AC  | PARAM_STEPPER_WAIT            | Wait time in seconds between change direction                       |
-| 29  | AD  | PARAM_WEIGHT_FACTOR           | Weight calibration: conversion factor digital -> gr                 |
-| 30  | AE  | PARAM_WEIGHT_EMPTY            | Weight calibration: digital offset value when bioreactor is empty   |
-| 31  | AF  | PARAM_SEDIMENTATION_TIME      | Number of minutes to wait without rotation before emptying          |
-| 32  | AG  | PARAM_FILLED_TIME             | Number of minutes to stay in the filled state                       |
-| 51  | AZ  | PARAM_ENABLED                 | Enabled service (set by user)                                       |
+| ID  | P   | NAME             | DESCRIPTION                                                                |
+| --- | --- | ---------------- | -------------------------------------------------------------------------- |
+| 0   | A   | PARAM_TEMP_EXT1  | Temperature of the solution (top)                                          |
+| 1   | B   | PARAM_TEMP_EXT2  | Temperature of the solution (bottom)                                       |
+| 2   | C   | PARAM_PH         | pH (raw values)                                                            |
+| 3   | D   | PARAM_PH_H       | pH in unit of potential of hydrogen                                        |
+| 4   | E   | PARAM_PH_TARGET  | Desired pH                                                                 |
+| 5   | F   | PARAM_EC         | Electrolytic Conductivity (raw values)                                     |
+| 6   | G   | PARAM_EC_US      | Electrolytic Conductivity in unit of micro Siemens                         |
+| 22  | W   |                  |                                                                            |
+| 23  | X   |                  |                                                                            |
+| 24  | Y   | PARAM_ERROR      | Error in the system                                                        |
+| 25  | Z   | PARAM_ENABLED    | Currently active service                                                   |
+| 26  | AA  | PARAM_PH_FACTOR  | PH calibration: conversion factor digital -> H                             |
+| 27  | AB  | PARAM_PH_NEUTRAL | PH calibration: digital offset value when bioreactor is full of pure water |
+| 28  | AC  | PARAM_EC_FACTOR  | EC calibration: conversion factor digital -> uS                            |
+| 29  | AD  | PARAM_EC_NEUTRAL | EC calibration: digital offset value when bioreactor is full of pure water |
+| 51  | AZ  | PARAM_ENABLED    | Enabled service (set by user)                                              |
 
 ## Other planned parameters
 
@@ -40,30 +35,9 @@ Others variables are consider with aditional modules that you can connect to the
 
 | ID  | PARAM | PARAM NAME              | DESCRIPTION                                                                                                          |
 | --- | ----- | ----------------------- | -------------------------------------------------------------------------------------------------------------------- |
-|     |       | PARAM_PH                | Current pH                                                                                                           |
 |     |       | PARAM_PH_STATE          | 0: Pause 1 : normal acquisition, 2 : purge of pipes, 4: calibration pH=4, 7: calibration pH=7, 10: calibration pH=10 |
-|     |       | PARAM_FLUX_GAS1         |                                                                                                                      |
-|     |       | PARAM_FLUX_GAS2         |                                                                                                                      |
-|     |       | PARAM_FLUX_GAS3         |                                                                                                                      |
-|     |       | PARAM_FLUX_GAS4         |                                                                                                                      |
-|     |       | PARAM_CONDUCTIVITY      |                                                                                                                      |
-| 35  | AJ    | PARAM_TARGET_PH         | Desired pH                                                                                                           |
-| 36  | AK    | PARAM_PH_FACTOR_A       |                                                                                                                      |
-| 37  | AL    | PARAM_PH_FACTOR_B       |                                                                                                                      |
-| 39  | AN    | PARAM_DESIRED_FLUX_GAS1 |                                                                                                                      |
-| 40  | AO    | PARAM_DESIRED_FLUX_GAS2 |                                                                                                                      |
-| 41  | AP    | PARAM_DESIRED_FLUX_GAS3 |                                                                                                                      |
-| 42  | AQ    | PARAM_DESIRED_FLUX_GAS4 |                                                                                                                      |
-| 43  | AR    | PARAM_ANEMO_OFFSET1     | Anemometer calibration: offset of the digital value (digital value when no gas is flowing)                           |
-| 44  | AS    | PARAM_ANEMO_OFFSET2     |                                                                                                                      |
-| 45  | AT    | PARAM_ANEMO_OFFSET3     |                                                                                                                      |
-| 46  | AU    | PARAM_ANEMO_OFFSET4     |                                                                                                                      |
-| 47  | AV    | PARAM_ANEMO_FACTOR1     | Anemometer calibration factor: conversion between gas flux (of air) and digital unit                                 |
-| 48  | AW    | PARAM_ANEMO_FACTOR2     |                                                                                                                      |
-| 49  | AX    | PARAM_ANEMO_FACTOR3     |                                                                                                                      |
-| 50  | AY    | PARAM_ANEMO_FACTOR4     |                                                                                                                      |
 
-# State machine
+## State machine
 
 There are 3 important variables that will manage the state of the bioreactor:
 
