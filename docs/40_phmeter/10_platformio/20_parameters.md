@@ -70,18 +70,19 @@ If you want to control everything the value of `PARAM_ENABLED` should be 63.
 `PARAM_STATUS` <kbd>AZ</kbd> will display the currently active functionalities. It is composed of different bits that can
 be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
 
-| BIT | PARAM_STATUS      | COMMENT                       |
-| --- | ----------------- | ----------------------------- |
-| 0   | FLAG_OUTPUT_1     | Enable/disable food control   |
-| 1   | FLAG_OUTPUT_2     | Enable/disable food control   |
-| 2   | FLAG_OUTPUT_3     | Enable/disable food control   |
-| 3   | FLAG_OUTPUT_4     | Enable/disable food control   |
-| 4   | FLAG_PH_CONTROL   | Enable/disable pH control     |
-| 5   | FLAG_PH_CALIBRATE | Enable/disable pH calibration |
-| 6   | FLAG_RELAY_ACID   | Enable/disable acid addition  |
-| 7   | FLAG_RELAY_BASE   | Enable/disable base addition  |
+| BIT | PARAM_STATUS            | COMMENT                       |
+| --- | ----------------------- | ----------------------------- |
+| 0   | FLAG_OUTPUT_1           | Enable/disable food control   |
+| 1   | FLAG_OUTPUT_2           | Enable/disable food control   |
+| 2   | FLAG_OUTPUT_3           | Enable/disable food control   |
+| 3   | FLAG_OUTPUT_4           | Enable/disable food control   |
+| 4   | FLAG_PH_CONTROL         | Enable/disable pH control     |
+| 5   | FLAG_PH_CALIBRATE       | Enable/disable pH calibration |
+| 6   | FLAG_RELAY_ACID         | Enable/disable acid addition  |
+| 7   | FLAG_RELAY_BASE         | Enable/disable base addition  |
+| 8   | FLAG_STATUS_TEST_PROBES | Enable/disable test probes    |
 
-The status is currently the <kbd>AZ</kbd> parameter. You can change the status by changing this value. For example, if you want to force the bioreactor to go in the emptying state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_OUTPUT_3` are set. In other words, you may have to add `2^2 (4) + 2^4 (16) = 20` to your value of the parameter <kbd>AZ</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for filling and all commands.
+The status is currently the <kbd>AZ</kbd> parameter. You can change the status by changing this value. For example, if you want to force the pHMeter to go in the alkaline state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_PH_CONTROL` & `FLAG_RELAY_BASE` are set. In other words, you may have to add `2^0 (1) + 2^4 (16) + 2^7 (128) = 145` to your value of the parameter <kbd>AZ</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for filling and all commands.
 
 :::danger
 The param `PARAM_STATUS` is the main control when you are running the bioreactor protocol, be sure that those manual changes do not affect your actual test.
