@@ -10,24 +10,25 @@ All the functionalities and the communication between processes are ensured by a
 
 The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
 
-| ID  | P   | NAME             | DESCRIPTION                                                                |
-| --- | --- | ---------------- | -------------------------------------------------------------------------- |
-| 0   | A   | PARAM_TEMP_EXT1  | Temperature of the solution (top)                                          |
-| 1   | B   | PARAM_TEMP_EXT2  | Temperature of the solution (bottom)                                       |
-| 2   | C   | PARAM_PH         | pH (raw values)                                                            |
-| 3   | D   | PARAM_PH_H       | pH in unit of potential of hydrogen                                        |
-| 4   | E   | PARAM_PH_TARGET  | Desired pH                                                                 |
-| 5   | F   | PARAM_EC         | Electrolytic Conductivity (raw values)                                     |
-| 6   | G   | PARAM_EC_US      | Electrolytic Conductivity in unit of &mu;Siemens                         |
-| 22  | W   |                  |                                                                            |
-| 23  | X   |                  |                                                                            |
-| 24  | Y   | PARAM_ERROR      | Error in the system                                                        |
-| 25  | Z   | PARAM_ENABLED    | Currently active service                                                   |
-| 26  | AA  | PARAM_PH_FACTOR  | PH calibration: conversion factor digital -> H                             |
-| 27  | AB  | PARAM_PH_NEUTRAL | PH calibration: digital offset value when bioreactor is full of pure water |
-| 28  | AC  | PARAM_EC_FACTOR  | EC calibration: conversion factor digital -> uS                            |
-| 29  | AD  | PARAM_EC_NEUTRAL | EC calibration: digital offset value when bioreactor is full of pure water |
-| 51  | AZ  | PARAM_ENABLED    | Enabled service (set by user)                                              |
+| ID  | P   | NAME                | DESCRIPTION                                                                |
+| --- | --- | ------------------- | -------------------------------------------------------------------------- |
+| 0   | A   | PARAM_TEMP_EXT1     | Temperature of the solution (top)                                          |
+| 1   | B   | PARAM_TEMP_EXT2     | Temperature of the solution (bottom)                                       |
+| 2   | C   | PARAM_PH            | pH (raw values)                                                            |
+| 3   | D   | PARAM_PH_H          | pH in unit of potential of hydrogen                                        |
+| 4   | E   | PARAM_PH_TARGET     | Desired pH                                                                 |
+| 5   | F   | PARAM_EC            | Electrolytic Conductivity (raw values)                                     |
+| 6   | G   | PARAM_EC_US         | Electrolytic Conductivity in unit of &mu;Siemens                           |
+| 16  | Q   | PARAM_NUMBER_ACQ    | Number of acquisition of 100 ms that will be taken                         |
+| 17  | R   | PARAM_ACTIVE_PROBES | Number of reading values                                                   |
+| 18  | S   | PARAM_BATTERY       | Battery voltage (hundredths of volt)                                       |
+| 24  | Y   | PARAM_ERROR         | Error in the system                                                        |
+| 25  | Z   | PARAM_ENABLED       | Currently active service                                                   |
+| 26  | AA  | PARAM_PH_FACTOR     | PH calibration: conversion factor digital -> H                             |
+| 27  | AB  | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when bioreactor is full of pure water |
+| 28  | AC  | PARAM_EC_FACTOR     | EC calibration: conversion factor digital -> uS                            |
+| 29  | AD  | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when bioreactor is full of pure water |
+| 51  | AZ  | PARAM_ENABLED       | Enabled service (set by user)                                              |
 
 ## Other planned parameters
 
