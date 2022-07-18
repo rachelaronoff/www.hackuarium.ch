@@ -6,7 +6,7 @@
 
 :::
 
-| Port | Pin | Arduino Mask        | Alternative functions                         | Bertha V6.1.0                               |
+| Port | Pin | Arduino Mask        | Alternative functions                         | pH V0.1.0                               |
 | ---- | --- | ------------------- | --------------------------------------------- | ------------------------------------------- |
 | B    | 7   | D11 (PWM)           | OC0A <br /> OC1C <br /> PCINT7 <br /> /RTS    | Pin for Input/Ouput 1 (PWM alkaline food)   |
 | B    | 6   | D10 (PWM)           | OC1B <br /> PCINT6 <br /> OC.4B <br /> ADC13  | Pin for LCD D6         |
