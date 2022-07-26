@@ -1,11 +1,5 @@
 # Parameters
 
-:::danger
-
-¡UPDATE 18042022!
-
-:::
-
 All the functionalities and the communication between processes are ensured by a common list of parameters.
 
 The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
