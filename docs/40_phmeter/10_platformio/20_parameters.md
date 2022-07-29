@@ -22,7 +22,7 @@ The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These v
 | 27  | AB  | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when bioreactor is full of pure water |
 | 28  | AC  | PARAM_EC_FACTOR     | EC calibration: conversion factor digital -> uS                            |
 | 29  | AD  | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when bioreactor is full of pure water |
-| 51  | AZ  | PARAM_ENABLED       | Enabled service (set by user)                                              |
+| 51  | AZ  | PARAM_STATUS       | Enabled service (set by user)                                              |
 
 ## Other planned parameters
 
