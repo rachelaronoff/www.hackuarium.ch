@@ -2,7 +2,6 @@
 sidebar_position: 1
 ---
 
-
 # Installation
 
 ## Cloning the project
@@ -32,7 +31,7 @@ The possibility to clone the project will require that you validate your public 
 
 In VSCode you need to open `Extensions` tab or press <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>x</kbd>, and search ´PlatformIO IDE´ to install it:
 
-![PlatformIO IDE](platformio.png)
+![PlatformIO IDE](images/platformio.png)
 
 ## Hardware support for Leonardo 8MHz = LilyPad Arduino USB
 
@@ -76,17 +75,17 @@ You can now proceed with burning the bootloader using the `program_via_USBtinyIS
 > pio run -e program_via_USBtinyISP --target bootloader
 ```
 
-![PlatformIO: New Terminal](terminal.png)
+![PlatformIO: New Terminal](images/terminal.png)
 
 ### Upload the code
 
 Once you have the bootloader, you can upload your code with `PlatformIO: Upload` <VscArrowRight /> or press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>:
 
-![Upload option](upload.png)
+![Upload option](images/upload.png)
 
 You can check upload success in the same terminal:
 
-![Upload success](upload-success.png)
+![Upload success](images/upload-success.png)
 
 ## The parameters
 
