@@ -2,9 +2,9 @@
 
 All the functionalities and the communication between processes are ensured by a common list of parameters.
 
-The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the bioreactor reboots.
+The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the pHMeter reboots.
 
-| ID  | P   | NAME                | DESCRIPTION                                                                |
+| ID  | PARAM   | NAME                | DESCRIPTION                                                                |
 | --- | --- | ------------------- | -------------------------------------------------------------------------- |
 | 0   | A   | PARAM_TEMP_EXT1     | Temperature of the solution (top)                                          |
 | 1   | B   | PARAM_TEMP_EXT2     | Temperature of the solution (bottom)                                       |
@@ -19,14 +19,14 @@ The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These v
 | 24  | Y   | PARAM_ERROR         | Error in the system                                                        |
 | 25  | Z   | PARAM_ENABLED       | Currently active service                                                   |
 | 26  | AA  | PARAM_PH_FACTOR     | PH calibration: conversion factor digital -> H                             |
-| 27  | AB  | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when bioreactor is full of pure water |
+| 27  | AB  | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when pHMeter is full of pure water |
 | 28  | AC  | PARAM_EC_FACTOR     | EC calibration: conversion factor digital -> uS                            |
-| 29  | AD  | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when bioreactor is full of pure water |
+| 29  | AD  | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when pHMeter is full of pure water |
 | 51  | AZ  | PARAM_STATUS        | Enabled service (set by user)                                              |
 
 ## Other planned parameters
 
-Others variables are consider with aditional modules that you can connect to the biorector via RJ12 port.
+Others variables are consider with aditional modules that you can connect to the pHMeter via RJ12 port.
 
 | ID  | PARAM | PARAM NAME     | DESCRIPTION                                                                                                          |
 | --- | ----- | -------------- | -------------------------------------------------------------------------------------------------------------------- |
@@ -34,19 +34,19 @@ Others variables are consider with aditional modules that you can connect to the
 
 ## State machine
 
-There are 3 important variables that will manage the state of the bioreactor:
+There are 3 important variables that will manage the state of the pHMeter:
 
-- `PARAM_ENABLED`: the functions that are currently enabled
-- `PARAM_STATUS`: the current status of the bioreactor
-- `PARAM_ERROR`: if there is any error in one of the processes
+- `PARAM_ENABLED`: the functions that are currently enabled.
+- `PARAM_STATUS`: the current status of the pHMeter.
+- `PARAM_ERROR`: if there is any error in one of the processes.
 
 :::info
-The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some function of the bioreactor. It is for example possible to disable heating while keeping all the other functionalities active.
+The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some function of the pHMeter. It is for example possible to disable EC while keeping all the other functionalities active.
 :::
 
-## PARAM_ENABLED
+### PARAM_ENABLED
 
-`PARAM_ENABLED` <kbd>Z</kbd> allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, agitation and food control.
+`PARAM_ENABLED` <kbd>Z</kbd> allows to enable or disable some functionalities of the pHMeter. Currently, it can control alkaline/acid food.
 
 | BIT | PARAM_ENABLED | COMMENT                                   |
 | --- | ------------- | ----------------------------------------- |
@@ -56,12 +56,12 @@ The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some funct
 | 3   | FLAG_OUTPUT_4 | Enable/disable alkaline/acid aux. control |
 
 :::tip
-If you want to control everything the value of `PARAM_ENABLED` should be 63.
+If you want to control everything the value of `PARAM_ENABLED` should be 15.
 :::
 
 ## PARAM_STATUS
 
-`PARAM_STATUS` <kbd>AZ</kbd> will display the currently active functionalities. It is composed of different bits that can be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
+`PARAM_STATUS` <kbd>AZ</kbd> will display the currently active functionalities. It is composed of different bits that can be enabled or disabled using the method `start` and `stop`.
 
 | BIT | PARAM_STATUS            | COMMENT                                   |
 | --- | ----------------------- | ----------------------------------------- |
@@ -76,15 +76,15 @@ If you want to control everything the value of `PARAM_ENABLED` should be 63.
 | 8   | FLAG_RELAY_BASE         | Enable/disable base addition              |
 | 9   | FLAG_STATUS_TEST_PROBES | Enable/disable test probes                |
 
-The status is currently the <kbd>AZ</kbd> parameter. You can change the status by changing this value. For example, if you want to force the pHMeter to go in the alkaline state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_PH_CONTROL` & `FLAG_RELAY_BASE` are set. In other words, you may have to add `2^0 (1) + 2^5 (32) + 2^8 (256) = 289` to your value of the parameter <kbd>AZ</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for filling and all commands.
+The status is currently the <kbd>AZ</kbd> parameter. You can change the status by changing this value. For example, if you want to force the pHMeter to go in the alkaline state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_PH_CONTROL` & `FLAG_RELAY_BASE` are set. In other words, you may have to add `2^0 (1) + 2^5 (32) + 2^8 (256) = 289` to your value of the parameter <kbd>AZ</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for acidification and all commands.
 
 :::danger
-The param `PARAM_STATUS` is the main control when you are running the bioreactor protocol, be sure that those manual changes do not affect your actual test.
+The param `PARAM_STATUS` is the main control when you are running the pHMeter protocol, be sure that those manual changes do not affect your actual test.
 :::
 
 ## PARAM_ERROR
 
-`PARAM_ERROR` <kbd>Y</kbd> will display any error in the bioreactor, you can check the code of the error with this table:
+`PARAM_ERROR` <kbd>Y</kbd> will display any error in the pHMeter, you can check the code of the error with this table:
 
 | BIT | PARAM_ERROR                | COMMENT                                                    |
 | --- | -------------------------- | ---------------------------------------------------------- |

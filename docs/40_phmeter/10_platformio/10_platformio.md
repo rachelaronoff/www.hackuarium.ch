@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+
 # Installation
 
 ## Cloning the project
@@ -13,9 +14,9 @@ sidebar_position: 1
 
 You know with age we take some habits and it would be easier if you follow the same ones...
 
-All our github projects are always in a folder called `git`
+All our GitHub projects are always in a folder called `git`
 which is at the first level of the `home` directory. It is followed by the
-name of the github user/organization and finally the project name.
+name of the GitHub user/organization and finally the project name.
 
 So, go to the project from bash:
 
@@ -23,12 +24,13 @@ So, go to the project from bash:
 cd ~/git/hackuarium/phmeter
 ```
 
-The possibility to clone the project will require that you validate your public key
-in github!
+:::info
+The possibility to clone the project will require that you validate your public key in GitHub!
+:::
 
 ## Installing the PlatformIO plugin
 
-In VSCode you need to open `Extensions` tab or press `(CTRL+Shift+X)`, and search ´PlatformIO IDE´ to install it:
+In VSCode you need to open `Extensions` tab or press <kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>x</kbd>, and search ´PlatformIO IDE´ to install it:
 
 ![PlatformIO IDE](platformio.png)
 
@@ -36,7 +38,9 @@ In VSCode you need to open `Extensions` tab or press `(CTRL+Shift+X)`, and searc
 
 The pHMeter is operating at 8MHz/3V3 instead of the standard 16MHz/5V.
 
+:::warning
 If you do any mistake and try flashing the pHMeter board as if it was a normal Leonardo, you will be able to flash the program but the USB port will not be recognized anymore afterwards. You will have to reflash the bootloader!!!
+:::
 
 :::caution
 
@@ -64,30 +68,26 @@ You should now be able to compile the project from PlatformIO IDE.
 
 ### Burning bootloader
 
-You can now proceed with burning the bootloader using the `program_via_USBtinyISP` environment created in `platformio.ini` file. Go to `platformIO Terminal` and type:
+import { VscTerminal, VscArrowRight } from "react-icons/vsc";
+
+You can now proceed with burning the bootloader using the `program_via_USBtinyISP` environment created in `platformio.ini` file. Click on `PlatformIO: New Terminal` <VscTerminal /> and type:
 
 ```bash
-$: pio run -e program_via_USBtinyISP --target bootloader
+> pio run -e program_via_USBtinyISP --target bootloader
 ```
 
 ![PlatformIO: New Terminal](terminal.png)
 
 ### Upload the code
 
-Once you have the bootloader, you can upload your code with `PlatformIO: Upload` button or press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>:
+Once you have the bootloader, you can upload your code with `PlatformIO: Upload` <VscArrowRight /> or press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>U</kbd>:
 
 ![Upload option](upload.png)
 
 You can check upload success in the same terminal:
 
-:::danger
-
-¡UPDATE!
-
-:::
-
 ![Upload success](upload-success.png)
 
-# The parameters
+## The parameters
 
 In order to control the bioreactor you should have a look at the description of the [Parameters](20_parameters.md) (Go Next).

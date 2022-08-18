@@ -30,7 +30,7 @@ Each code will correspond to a database name so that is really needs to be uniqu
 You may convert from the 2 letters code to a number using the following javascript code.
 
 ```js
-'$'.charCodeAt(0)*256+'A'.charCodeAt(0)
+'P'.charCodeAt(0)*256+'A'.charCodeAt(0)
 ```
 
 :::tip
@@ -40,5 +40,5 @@ You may use it in the browser console.
 In the logs this ID will appear as hexadecimal code. You may convert from deciaml to hexadecimal in javascript using the following code:
 
 ```js
-Number(9281).toString(16)
+Number(20545).toString(16)
 ```
