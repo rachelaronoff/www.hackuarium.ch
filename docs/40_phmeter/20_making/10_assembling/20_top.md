@@ -13,7 +13,7 @@ Components:
 
 ## Loading cell connection board
 
-<!-->
+<!--
 ![Board connection for Loading cells](images/top/loading_cell_PCB_components.JPG)
 
 ![Top view for loading cell board](images/top/loading_cell_PCB_top_view.JPG)
@@ -40,4 +40,4 @@ Components:
 
 ![Soldering loading cells to PCB](images/top/loading_cell_PCB_soldering.JPG)
 
-<-->
+-->
