@@ -15,7 +15,7 @@ The first step to assemble the pHMeter is to put the casing together. In this pa
 First, identify the parts you are dealing with. In the following image are shown all the parts required to build it.
 
 :::note
-Sections `A` and `B` are all the laser cut pieces for pHMEter.
+Sections `A` and `B` are all the laser cut pieces for pHMeter.
 :::
 
 ![Base part](images/main_case.png)
