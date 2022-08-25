@@ -10,7 +10,7 @@
 
 ![All connections for bottom case](images/bottom/bottom_connections.jpg)
 
-## Connect final component!
+## Connect final component
 
 ![Rotary push button tape](images/all_together/case_rotary_tape.jpg)
 
