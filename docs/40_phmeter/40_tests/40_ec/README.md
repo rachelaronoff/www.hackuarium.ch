@@ -12,13 +12,17 @@ If everything runs well, you have to obtain a signal plot like this:
 
 ![EC signal generator](images/signal_generator.bmp)
 
-The corrects values for this part of the circuit need to be:
+The ideal values for this part of the circuit need to be:
+
+| Measurement | Value    |
+| :---------- | -------- |
+| Voltage Max | 3.3 V    |
+| Voltage Min | -3.3 V   |
+| Frequency   | 1.76 kHz |
+
+The experimental results are very similiar to this:
 
 ![EC signal generator](images/signal_generator_pp.bmp)
-
-| Measurement | Value |
-| :---------- | ----- |
-| Voltage Max | $$\approx 3.3 V$$ |
 
 ![EC raw values](images/ec_raw.svg)
 
