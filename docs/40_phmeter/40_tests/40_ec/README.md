@@ -94,7 +94,7 @@ This signal varies in amplitudes depending on the quantity of KCI + destilated w
 This first test is only for check the answer in the EC, so the final value can change if you want to calibrate the EC.
 :::
 
-## Second stage of conditoning
+## Second stage of conditioning
 
 After see the sawtooth, you are ready to test the last stage for the analog conditioning.
 
