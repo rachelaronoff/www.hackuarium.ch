@@ -43,7 +43,7 @@ const FeatureList = [
     ),
   },
   {
-    title: "pH meter",
+    title: "pHMeter",
     link: "/docs/phmeter",
     Svg: require("../../static/img/logo-phmeter.svg").default,
     description: (

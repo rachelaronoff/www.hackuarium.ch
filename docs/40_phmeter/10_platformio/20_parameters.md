@@ -4,25 +4,25 @@ All the functionalities and the communication between processes are ensured by a
 
 The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These values will be recovered when the pHMeter reboots.
 
-| ID  | PARAM   | NAME                | DESCRIPTION                                                                |
-| --- | --- | ------------------- | -------------------------------------------------------------------------- |
-| 0   | A   | PARAM_TEMP_EXT1     | Temperature of the solution (top)                                          |
-| 1   | B   | PARAM_TEMP_EXT2     | Temperature of the solution (bottom)                                       |
-| 2   | C   | PARAM_PH            | pH (raw values)                                                            |
-| 3   | D   | PARAM_PH_H          | pH in unit of potential of hydrogen                                        |
-| 4   | E   | PARAM_PH_TARGET     | Desired pH                                                                 |
-| 5   | F   | PARAM_EC            | Electrolytic Conductivity (raw values)                                     |
-| 6   | G   | PARAM_EC_US         | Electrolytic Conductivity in unit of &mu;Siemens/cm                           |
-| 16  | Q   | PARAM_NUMBER_ACQ    | Number of acquisition of 100 ms that will be taken                         |
-| 17  | R   | PARAM_ACTIVE_PROBES | Number of reading values                                                   |
-| 18  | S   | PARAM_BATTERY       | Battery voltage (hundredths of volt)                                       |
-| 24  | Y   | PARAM_ERROR         | Error in the system                                                        |
-| 25  | Z   | PARAM_ENABLED       | Currently active service                                                   |
-| 26  | AA  | PARAM_PH_FACTOR     | PH calibration: conversion factor digital -> H                             |
-| 27  | AB  | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when pHMeter is full of pure water |
-| 28  | AC  | PARAM_EC_FACTOR     | EC calibration: conversion factor digital -> uS                            |
-| 29  | AD  | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when pHMeter is full of pure water |
-| 51  | AZ  | PARAM_STATUS        | Enabled service (set by user)                                              |
+| ID  | PARAM | NAME                | DESCRIPTION                                                             |
+| --- | ----- | ------------------- | ----------------------------------------------------------------------- |
+| 0   | A     | PARAM_TEMP_EXT1     | Temperature of the solution (top)                                       |
+| 1   | B     | PARAM_TEMP_EXT2     | Temperature of the solution (bottom)                                    |
+| 2   | C     | PARAM_PH            | pH (raw values)                                                         |
+| 3   | D     | PARAM_PH_H          | pH in unit of potential of hydrogen                                     |
+| 4   | E     | PARAM_PH_TARGET     | Desired pH                                                              |
+| 5   | F     | PARAM_EC            | Electrolytic Conductivity (raw values)                                  |
+| 6   | G     | PARAM_EC_US         | Electrolytic Conductivity in unit of &mu;Siemens/cm                     |
+| 16  | Q     | PARAM_NUMBER_ACQ    | Number of acquisition of 100 ms that will be taken                      |
+| 17  | R     | PARAM_ACTIVE_PROBES | Number of reading values                                                |
+| 18  | S     | PARAM_BATTERY       | Battery voltage (hundredths of volt)                                    |
+| 24  | Y     | PARAM_ERROR         | Error in the system                                                     |
+| 25  | Z     | PARAM_ENABLED       | Currently active service                                                |
+| 26  | AA    | PARAM_PH_FACTOR     | PH calibration: conversion factor digital -> H                          |
+| 27  | AB    | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when pHMeter is full of pure water |
+| 28  | AC    | PARAM_EC_FACTOR     | EC calibration: conversion factor digital -> uS                         |
+| 29  | AD    | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when pHMeter is full of pure water |
+| 51  | AZ    | PARAM_STATUS        | Enabled service (set by user)                                           |
 
 ## Other planned parameters
 
@@ -70,11 +70,12 @@ If you want to control everything the value of `PARAM_ENABLED` should be 15.
 | 2   | FLAG_OUTPUT_3           | Enable/disable alkaline/acid aux. control |
 | 3   | FLAG_OUTPUT_4           | Enable/disable alkaline/acid aux. control |
 | 4   | FLAG_EC_READING         | Enable/disable EC reading                 |
-| 5   | FLAG_PH_CONTROL         | Enable/disable pH control                 |
-| 6   | FLAG_PH_CALIBRATE       | Enable/disable pH calibration             |
-| 7   | FLAG_RELAY_ACID         | Enable/disable acid addition              |
-| 8   | FLAG_RELAY_BASE         | Enable/disable base addition              |
-| 9   | FLAG_STATUS_TEST_PROBES | Enable/disable test probes                |
+| 5   | FLAG_EC_READING         | Enable/disable EC calibration             |
+| 6   | FLAG_PH_CONTROL         | Enable/disable pH control                 |
+| 7   | FLAG_PH_CALIBRATE       | Enable/disable pH calibration             |
+| 8   | FLAG_RELAY_ACID         | Enable/disable acid addition              |
+| 9   | FLAG_RELAY_BASE         | Enable/disable base addition              |
+| 10  | FLAG_STATUS_TEST_PROBES | Enable/disable test probes                |
 
 The status is currently the <kbd>AZ</kbd> parameter. You can change the status by changing this value. For example, if you want to force the pHMeter to go in the alkaline state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_PH_CONTROL` & `FLAG_RELAY_BASE` are set. In other words, you may have to add `2^0 (1) + 2^5 (32) + 2^8 (256) = 289` to your value of the parameter <kbd>AZ</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for acidification and all commands.
 
