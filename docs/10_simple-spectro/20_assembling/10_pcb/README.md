@@ -8,7 +8,7 @@ First, take all the component of bag B out. You should have the following compon
 2. Battery connector
 3. Light detector
 4. UV LED (with the black strip around it)
-5. RBG LED
+5. RGB LED
 6. Rotary push button
 7. LCD screen
 8. Single row straight pins header for the screen
@@ -53,7 +53,12 @@ Next, take the board on face 1 and solder the potentiometer in place. Cut the pi
 ![pot1.jpg](pot1.JPG)
 ![pot2.jpg](pot2.JPG)
 
-## 3) RGB LED
+## 3) UV LED
+
+Again, be careful with the orientation. Bent the LED like you did with the previous one.
+![led-uv.jpg](led-uv.JPG)
+
+## 4) RGB LED
 
 :::info
 Be careful when soldering the LEDs: for these components, the orientation matters! You can recognize the minus pin of an LED because it is the shortest one, and because there is a flat on that side of the LED. You can feel it with your fingers if you roll the LED between them.
@@ -62,11 +67,6 @@ Be careful when soldering the LEDs: for these components, the orientation matter
 Start by placing the RGB LED on the board in the correct orientation, but don't push until the LED is against the board. Gently bend the pins of the LED towards the square hole until you get an angle of 90 degrees. Now make the side of the LED touch the board and solder it in place.
 ![led-rgb1.jpg](led-rgb1.JPG)
 ![led-rgb2.jpg](led-rgb2.JPG)
-
-## 4) UV LED
-
-Again, be careful with the orientation. Bent the LED like you did with the previous one.
-![led-uv.jpg](led-uv.JPG)
 
 ## 5) Light detector
 
@@ -86,14 +86,18 @@ Be really careful to orient the connector correctly: the red cable of the batter
 
 ## 7) Screen
 
-**On face 2 of the PCB!!!**
+:::warning
+Check if your are putting the Screen over its image on **Face 2** of the PCB!!!
+:::
 
 Turn the PCB around to be soldering on face B. Take the screen and solder it in place.
 ![screen.jpg](screen.JPG)
 
 ## 8) Rotary push button
 
-**On face 2 of the PCB!!!**
+:::warning
+Check if your are putting the Rotary push button over its image on **Face 2** of the PCB!!!
+:::
 
 Finally, solder the rotary push button. Start by soldering the 5 small pins and the finish by filling the two large holes with solder. But do that only when you have verified that the button is placed well!
 ![rotary1.jpg](rotary1.JPG)
