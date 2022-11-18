@@ -17,12 +17,12 @@ The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These v
 | 17  | R     | PARAM_ACTIVE_PROBES | Number of reading values                                                |
 | 18  | S     | PARAM_BATTERY       | Battery voltage (hundredths of volt)                                    |
 | 24  | Y     | PARAM_ERROR         | Error in the system                                                     |
-| 25  | Z     | PARAM_ENABLED       | Currently active service                                                |
+| 25  | Z     | PARAM_STATUS        | Currently active service                                                |
 | 26  | AA    | PARAM_PH_FACTOR     | PH calibration: conversion factor digital -> H                          |
 | 27  | AB    | PARAM_PH_NEUTRAL    | PH calibration: digital offset value when pHMeter is full of pure water |
 | 28  | AC    | PARAM_EC_FACTOR     | EC calibration: conversion factor digital -> uS                         |
 | 29  | AD    | PARAM_EC_NEUTRAL    | EC calibration: digital offset value when pHMeter is full of pure water |
-| 51  | AZ    | PARAM_STATUS        | Enabled services (set by user)                                           |
+| 51  | AZ    | PARAM_ENABLED       | Enabled services (set by user)                                          |
 
 ## Other planned parameters
 

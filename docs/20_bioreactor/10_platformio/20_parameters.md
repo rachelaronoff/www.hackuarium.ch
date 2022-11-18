@@ -17,7 +17,7 @@ The first 26 parameters (<kbd>A</kbd> -> <kbd>Z</kbd>) will be saved regularly i
 | 22  | W   | PARAM_CURRENT_STEP            | Enable protocol of bioreactor                                       |
 | 23  | X   | PARAM_CURRENT_WAIT_TIME       | Waiting time before start protocol                                  |
 | 24  | Y   | PARAM_ERROR                   | Error in the system                                                 |
-| 25  | Z   | PARAM_ENABLED                 | Currently active service                                            |
+| 25  | Z   | PARAM_STATUS                  | Currently active service                                            |
 | 26  | AA  | PARAM_STEPPER_SPEED           | Motor speed                                                         |
 | 27  | AB  | PARAM_STEPPER_STEPS           | Number of steps before changing the direction of the motor          |
 | 28  | AC  | PARAM_STEPPER_WAIT            | Wait time in seconds between change direction                       |
@@ -25,7 +25,7 @@ The first 26 parameters (<kbd>A</kbd> -> <kbd>Z</kbd>) will be saved regularly i
 | 30  | AE  | PARAM_WEIGHT_EMPTY            | Weight calibration: digital offset value when bioreactor is empty   |
 | 31  | AF  | PARAM_SEDIMENTATION_TIME      | Number of minutes to wait without rotation before emptying          |
 | 32  | AG  | PARAM_FILLED_TIME             | Number of minutes to stay in the filled state                       |
-| 51  | AZ  | PARAM_STATUS                 | Enabled service (set by user)                                       |
+| 51  | AZ  | PARAM_ENABLED                 | Enabled service (set by user)                                       |
 
 ## Other planned parameters
 
@@ -58,12 +58,12 @@ There are 3 important variables that will manage the state of the bioreactor:
 - `PARAM_ERROR`: if there is any error in one of the processes
 
 :::info
-The `PARAM_ENABLED` <kbd>Z</kbd> will allow to activate or deactivate some function of the bioreactor. It is for example possible to disable heating while keeping all the other functionalities active.
+The `PARAM_ENABLED` <kbd>AZ</kbd> will allow to activate or deactivate some function of the bioreactor. It is for example possible to disable heating while keeping all the other functionalities active.
 :::
 
 ### PARAM_ENABLED
 
-`PARAM_ENABLED` <kbd>Z</kbd> allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, agitation and food control.
+`PARAM_ENABLED` <kbd>AZ</kbd> allows to enable or disable some functionalities of the bioreactor. Currently, it can control heating, agitation and food control.
 
 | BIT | PARAM_ENABLED        | COMMENT                          |
 | --- | -------------------- | -------------------------------- |
@@ -80,7 +80,7 @@ If you want to control everything the value of `PARAM_ENABLED` should be 63.
 
 ### PARAM_STATUS
 
-`PARAM_STATUS` <kbd>AZ</kbd> will display the currently active functionalities. It is composed of different bits that can
+`PARAM_STATUS` <kbd>Z</kbd> will display the currently active functionalities. It is composed of different bits that can
 be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
 
 | BIT | PARAM_STATUS         | COMMENT                                                          |
@@ -100,7 +100,7 @@ be enabled or disabled using the method `start` and `stop`. You may also check t
 | 12  | FLAG_RELAY_ACID      | Enable/disable acid addition                                     |
 | 13  | FLAG_RELAY_BASE      | Enable/disable base addition                                     |
 
-The status is currently the <kbd>AZ</kbd> parameter. You can change the status by changing this value. For example, if you want to force the bioreactor to go in the emptying state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_OUTPUT_3` are set. In other words, you may have to add `2^2 (4) + 2^4 (16) = 20` to your value of the parameter <kbd>AZ</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for filling and all commands.
+The status is currently the <kbd>Z</kbd> parameter. You can change the status by changing this value. For example, if you want to force the bioreactor to go in the emptying state you should ensure that the bits for the outputs, let's say `FLAG_OUTPUT_1` & `FLAG_OUTPUT_3` are set. In other words, you may have to add `2^2 (4) + 2^4 (16) = 20` to your value of the parameter <kbd>Z</kbd> (in the case it was not yet enabled). Same procedure is to be implemented for filling and all commands.
 
 :::danger
 The param `PARAM_STATUS` is the main control when you are running the bioreactor protocol, be sure that those manual changes do not affect your actual test.
