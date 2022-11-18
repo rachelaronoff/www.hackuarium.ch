@@ -69,10 +69,10 @@ The `PARAM_ENABLED` <kbd>AZ</kbd> will allow to activate or deactivate some func
 | --- | -------------------- | -------------------------------- |
 | 0   | FLAG_PID_CONTROL     | enable/disable heating           |
 | 1   | FLAG_STEPPER_CONTROL | enable/disable agitation control |
-| 2   | FLAG_OUTPUT_1        | enable/disable food control      |
-| 3   | FLAG_OUTPUT_2        | enable/disable food control      |
-| 4   | FLAG_OUTPUT_3        | enable/disable food control      |
-| 5   | FLAG_OUTPUT_4        | enable/disable food control      |
+| 2   | FLAG_OUTPUT_1        | enable/disable food control 1    |
+| 3   | FLAG_OUTPUT_2        | enable/disable food control 2    |
+| 4   | FLAG_OUTPUT_3        | enable/disable food control 3    |
+| 5   | FLAG_OUTPUT_4        | enable/disable food control 4    |
 
 :::tip
 If you want to control everything the value of `PARAM_ENABLED` should be 63.
@@ -87,10 +87,10 @@ be enabled or disabled using the method `start` and `stop`. You may also check t
 | --- | -------------------- | ---------------------------------------------------------------- |
 | 0   | FLAG_PID_CONTROL     | Enable/disable heating                                           |
 | 1   | FLAG_STEPPER_CONTROL | Enable/disable agitation control                                 |
-| 2   | FLAG_OUTPUT_1        | Enable/disable food control                                      |
-| 3   | FLAG_OUTPUT_2        | Enable/disable food control                                      |
-| 4   | FLAG_OUTPUT_3        | Enable/disable food control                                      |
-| 5   | FLAG_OUTPUT_4        | Enable/disable food control                                      |
+| 2   | FLAG_OUTPUT_1        | Enable/disable food control 1                                    |
+| 3   | FLAG_OUTPUT_2        | Enable/disable food control 2                                    |
+| 4   | FLAG_OUTPUT_3        | Enable/disable food control 3                                    |
+| 5   | FLAG_OUTPUT_4        | Enable/disable food control 4                                    |
 | 6   | FLAG_PH_CONTROL      | Enable/disable pH control                                        |
 | 7   | FLAG_GAS_CONTROL     | Enable/disable gas control                                       |
 | 8   | FLAG_SEDIMENTATION   | Enable/disable sedimentation (one of the phases of food control) |
@@ -115,11 +115,11 @@ The param `PARAM_STATUS` is the main control when you are running the bioreactor
 | 0   | FLAG_TEMP_PCB_PROBE_ERROR    | Pcb probe failed (one wire not answering)                  |
 | 1   | FLAG_TEMP_EXT1_PROBE_ERROR   | Liquid probe in the top failed (one wire not answering)    |
 | 2   | FLAG_TEMP_EXT2_PROBE_ERROR   | Liquid probe in the bottom failed (one wire not answering) |
-| 3   | FLAG_TEMP_PCB_RANGE_ERROR    | Temperature of pcb is outside range                        |
-| 4   | FLAG_TEMP_EXT1_RANGE_ERROR   | Temperature of liquid in the top is outside range          |
-| 5   | FLAG_TEMP_EXT2_RANGE_ERROR   | Temperature of liquid in the bottom is outside range       |
-| 6   | FLAG_TEMP_TARGET_RANGE_ERROR | Target temperature is outside range                        |
-| 7   | FLAG_WEIGHT_RANGE_ERROR      | Weight is outside range                                    |
+| 3   | FLAG_TEMP_PCB_RANGE_ERROR    | Temperature of pcb is out of range range                   |
+| 4   | FLAG_TEMP_EXT1_RANGE_ERROR   | Temperature of liquid in the top is out of range           |
+| 5   | FLAG_TEMP_EXT2_RANGE_ERROR   | Temperature of liquid in the bottom is out of range        |
+| 6   | FLAG_TEMP_TARGET_RANGE_ERROR | Target temperature is out of range                         |
+| 7   | FLAG_WEIGHT_RANGE_ERROR      | Weight is out of range                                     |
 
 :::tip
 Always have this information at hand, you never know when it can be very helpful.
