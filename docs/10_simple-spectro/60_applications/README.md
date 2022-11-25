@@ -6,7 +6,7 @@ As you may also guess a lot of experiences are failing and you will also find he
 
 We highlight some representative experiments that you may easily reproduce.
 
-- [Biologiy](biology/README.md)
+- [Biology](biology/README.md)
 - Color
   - [E120 Carmine red 4](color/E120_Carmine_red_4/README.md)
   - [E131 Patent blue V](color/E131_Patent_blue_V/20190413/README.md)
