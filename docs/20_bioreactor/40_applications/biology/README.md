@@ -15,7 +15,7 @@ This experiment clearly shows the log phase and the stationary phase. But
 the growth was faster than expected. An acquisition every 15 minutes
 would have been a better choice. -->
 
-### Running [Example 3](../.../30_using/20_steps.md#example-3)
+### Running [Example 3](../../30_using/20_steps.md#example-3)
 
 - Beginning:
 
