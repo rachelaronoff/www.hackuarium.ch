@@ -80,8 +80,7 @@ If you want to control everything the value of `PARAM_ENABLED` should be 63.
 
 ### PARAM_STATUS
 
-`PARAM_STATUS` <kbd>Z</kbd> will display the currently active functionalities. It is composed of different bits that can
-be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
+`PARAM_STATUS` <kbd>Z</kbd> will display the currently active functionalities. It is composed of different bits that can be enabled or disabled using the method `start` and `stop`. You may also check the status of one of the functions using `getStatus`.
 
 | BIT | PARAM_STATUS         | COMMENT                                                          |
 | --- | -------------------- | ---------------------------------------------------------------- |

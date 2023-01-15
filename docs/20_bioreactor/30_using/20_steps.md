@@ -1,4 +1,4 @@
-# Steps
+# Steps and Examples
 
 We create a compact way to describe a set of instruction
 
