@@ -11,8 +11,9 @@ The first 26 parameters (`A` -> `Z`) will be saved regularly in the log. These v
 | 2   | C     | PARAM_PH            | pH (raw values)                                                         |
 | 3   | D     | PARAM_PH_H          | pH in unit of potential of hydrogen                                     |
 | 4   | E     | PARAM_PH_TARGET     | Desired pH                                                              |
-| 5   | F     | PARAM_EC            | Electric Conductivity (raw values)                                      |
-| 6   | G     | PARAM_EC_US         | Electric Conductivity in unit of &mu;Siemens/cm                         |
+| 5   | F     | PARAM_PID           | pH Control                                                              |
+| 6   | G     | PARAM_EC            | Electric Conductivity (raw values)                                      |
+| 7   | H     | PARAM_EC_US         | Electric Conductivity in unit of &mu;Siemens/cm                         |
 | 16  | Q     | PARAM_NUMBER_ACQ    | Number of acquisition of 100 ms that will be taken                      |
 | 17  | R     | PARAM_ACTIVE_PROBES | Number of reading values                                                |
 | 18  | S     | PARAM_BATTERY       | Battery voltage (hundredths of volt)                                    |
