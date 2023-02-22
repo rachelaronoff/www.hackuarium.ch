@@ -50,4 +50,4 @@ In order to activate the bioreactor you need to enable functions. Currently ther
 - Temperature control (value 3)
 
 You may enable the functionnablities by setting the parameter `AZ`. To activate all the functionnalities
-enter `AZ7`.
+enter `AZ63`.
