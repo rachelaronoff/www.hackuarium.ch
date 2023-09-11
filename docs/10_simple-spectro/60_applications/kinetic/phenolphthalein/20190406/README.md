@@ -126,12 +126,12 @@ Because of the large excess of NaOH in this experiment we observe a pseudo-order
 
 ## k versus [NaOH]
 
-| [NaOH]  | k      |
-| ------- | ------ |
-| 0.300 M | 0.2587 |
-| 0.225 M | 0.1812 |
-| 0.150 M | 0.1134 |
-| 0.075 M | 0.0497 |
+| [NaOH]  | k (min<sup>-1</sup>) |
+| ------- | -------------------- |
+| 0.300 M | 0.2587               |
+| 0.225 M | 0.1812               |
+| 0.150 M | 0.1134               |
+| 0.075 M | 0.0497               |
 
 A plot of the concentration of NaOH versus k shows a linear correlation:
 
