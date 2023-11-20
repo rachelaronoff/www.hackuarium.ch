@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+description: Intro to Hackuarium organization and documentation.
+tags: [Documentation, Hackuarium, Intro]
 ---
 
 # Hackuarium documentation

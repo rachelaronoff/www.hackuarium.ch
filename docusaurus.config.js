@@ -1,121 +1,105 @@
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+// @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-// With JSDoc @type annotations, IDEs can provide config autocompletion
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-(
-  module.exports = {
-    title: "Hackuarium open-hardware documentation",
-    tagline: "Hackuarium: Open laboratory for DIY biology and more",
-    url: "https://docs.hackuarium.org",
-    baseUrl: "/",
-    onBrokenLinks: "throw",
-    onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
-    organizationName: "hackuarium", // Usually your GitHub org/user name.
-    projectName: "docs.hackuarium.org", // Usually your repo name.
-    plugins: [
-      [
-        require.resolve("@easyops-cn/docusaurus-search-local"),
-        {
-          hashed: true,
-          //docsRouteBasePath: "/eln",
-          // indexPages: true, //because of bug: https://github.com/easyops-cn/docusaurus-search-local/issues/42
-        },
-      ],
-    ],
-    presets: [
-      [
-        "@docusaurus/preset-classic",
-        /** @type {import('@docusaurus/preset-classic').Options} */
-        ({
-          docs: {
-            sidebarPath: require.resolve("./sidebars.js"),
-            // Please change this to your repo.
-            editUrl:
-              "https://github.com/hackuarium/docs.hackuarium.org/edit/main/",
-            sidebarItemsGenerator: async function ({
-              defaultSidebarItemsGenerator,
-              ...args
-            }) {
-              let sidebarItems = await defaultSidebarItemsGenerator(args);
-              sidebarItems = filterItems(sidebarItems);
-              return raisingSingleNodes(sidebarItems);
-            },
-          },
-          blog: {
-            showReadingTime: true,
-            // Please change this to your repo.
-            editUrl:
-              "https://github.com/hackuarium/docs.hackuarium.org/edit/main/website/blog/",
-          },
-          theme: {
-            customCss: require.resolve("./src/css/custom.css"),
-          },
-        }),
-      ],
-    ],
+import { themes as prismThemes } from 'prism-react-renderer'
 
-    themeConfig:
-      /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: 'Hackuarium open-hardware documentation',
+  tagline: 'Hackuarium: Open laboratory for DIY biology and more',
+  favicon: 'img/favicon.ico',
+
+  // Set the production url of your site here
+  url: 'https://docs.hackuarium.org',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'hackuarium', // Usually your GitHub org/user name.
+  projectName: 'docs.hackuarium.org', // Usually your repo name.
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        navbar: {
-          title: "Hackuarium",
-          logo: {
-            alt: "Hackuarium logo",
-            src: "img/logo.svg",
-          },
-          items: [
-            {
-              type: "doc",
-              docId: "intro",
-              position: "left",
-              label: "Tutorial",
-            },
-            { to: "/blog", label: "Blog", position: "left" },
-            {
-              href: "https://github.com/facebook/docusaurus",
-              label: "GitHub",
-              position: "right",
-            },
-          ],
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/hackuarium/docs.hackuarium.org/edit/main/',
         },
-        footer: {
-          style: "dark",
-          copyright: `Copyright © ${new Date().getFullYear()} Hackuarium contributors. Built with Docusaurus.`,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/hackuarium/docs.hackuarium.org/edit/main/website/blog/',
         },
-        prism: {
-          theme: lightCodeTheme,
-          darkTheme: darkCodeTheme,
+        theme: {
+          customCss: './src/css/custom.css',
         },
       }),
-  }
-);
+    ],
+  ],
 
-function filterItems(items) {
-  items = items.filter((item) => item.label !== "includes");
-  items.forEach((item) => {
-    if (Array.isArray(item.items)) {
-      item.items = filterItems(item.items);
-    }
-  });
-  return items;
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      navbar: {
+        title: 'Hackuarium',
+        logo: {
+          alt: 'Hackuarium Logo',
+          src: 'img/logo.svg',
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Projects',
+          },
+          {
+            to: '/docs/category/tutorial---basics',
+            label: 'Tutorial',
+            position: 'left',
+          },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            href: 'https://github.com/facebook/docusaurus',
+            label: 'GitHub',
+            position: 'right',
+          },
+        ],
+      },
+      footer: {
+        style: 'dark',
+        copyright: `Copyright © ${new Date().getFullYear()} Hackuarium contributors. Built with Docusaurus.`,
+      },
+      prism: {
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
+      },
+    }),
 }
 
-function raisingSingleNodes(items) {
-  // we need to traverse the full hierarhy and if there is only one child items we raise it one level
-  for (let parentItem of items) {
-    if (parentItem && parentItem.items && parentItem.items.length) {
-      for (let j = 0; j < parentItem.items.length; j++) {
-        if (
-          parentItem.items[j].items &&
-          parentItem.items[j].items.length === 1
-        ) {
-          parentItem.items[j] = parentItem.items[j].items[0];
-        }
-      }
-      raisingSingleNodes(parentItem.items);
-    }
-  }
-  return items;
-}
+export default config
