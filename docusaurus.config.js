@@ -90,7 +90,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Hackuarium contributors. Built with Docusaurus.`,
+        copyright: `CC BY-NC-SA 3.0 - Copyright © ${new Date().getFullYear()} Hackuarium contributors.`,
       },
       prism: {
         theme: prismThemes.github,
