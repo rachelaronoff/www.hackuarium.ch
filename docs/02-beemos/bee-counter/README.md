@@ -6,7 +6,7 @@
 UNDER CONSTRUCTION
 :::
 
-![PCBsoldering](images/PCBsoldering.jpg
+![PCBsoldering](images/PCBsoldering.jpg)
 
 ### 1. Soldering (part 1)
 
