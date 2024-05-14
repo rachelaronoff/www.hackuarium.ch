@@ -78,7 +78,7 @@ const config = {
           },
           { to: 'https://wiki.hackuarium.ch', label: 'Wiki', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/hackuarium',
             label: 'GitHub',
             position: 'right',
           },
