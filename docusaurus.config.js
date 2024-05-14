@@ -8,8 +8,8 @@ import { themes as prismThemes } from 'prism-react-renderer'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Hackuarium open-hardware documentation',
-  tagline: 'Hackuarium: Open laboratory for DIY biology and more',
+  title: 'Hackuarium',
+  tagline: 'Open laboratory for DIY biology and more',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/hackuarium/docs.hackuarium.org/edit/main/',
+            'https://github.com/hackuarium/www.hackuarium.ch/edit/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
