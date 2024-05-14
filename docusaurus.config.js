@@ -72,6 +72,11 @@ const config = {
             label: 'Projects',
           },
           {
+             to: 'https://docs.google.com/forms/d/e/1FAIpQLSdoyS8HmsuZACYp-q79pLzxR9BPA60HbyL6ZR8x7h7x3eqbhQ/viewform',
+             label: 'Join',
+             position: 'left',
+          },
+          {
             to: '/docs/category/tutorial---basics',
             label: 'Tutorial',
             position: 'left',
