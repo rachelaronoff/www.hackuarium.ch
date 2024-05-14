@@ -46,13 +46,6 @@ const config = {
           editUrl:
             'https://github.com/hackuarium/docs.hackuarium.org/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/hackuarium/docs.hackuarium.org/edit/main/website/blog/',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,7 +76,7 @@ const config = {
             label: 'Tutorial',
             position: 'left',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: 'https://wiki.hackuarium.ch', label: 'Wiki', position: 'left' },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
