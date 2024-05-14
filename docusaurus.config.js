@@ -76,12 +76,11 @@ const config = {
              label: 'Join',
              position: 'left',
           },
-          {
-            to: '/docs/category/tutorial---basics',
-            label: 'Tutorial',
-            position: 'left',
+          { 
+            to: 'https://wiki.hackuarium.ch',
+            label: 'Wiki',
+            position: 'left'
           },
-          { to: 'https://wiki.hackuarium.ch', label: 'Wiki', position: 'left' },
           {
             href: 'https://github.com/hackuarium',
             label: 'GitHub',
