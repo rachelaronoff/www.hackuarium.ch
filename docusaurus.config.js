@@ -68,8 +68,8 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
             label: 'Projects',
+            position: 'left',
           },
           {
              to: 'https://docs.google.com/forms/d/e/1FAIpQLSe225AWDuI2KXi3Aeamvj-WYudjtg6PvGC9Yx1whdFwsuucrA/viewform',
@@ -80,6 +80,11 @@ const config = {
             to: 'https://wiki.hackuarium.ch',
             label: 'Wiki',
             position: 'left'
+          },
+          {
+            to: 'donate',
+            label: 'Donate',
+            position: 'left',
           },
           {
             href: 'https://github.com/hackuarium',
