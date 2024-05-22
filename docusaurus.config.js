@@ -76,11 +76,6 @@ const config = {
              label: 'Join',
              position: 'left',
           },
-          { 
-            to: 'https://wiki.hackuarium.ch',
-            label: 'Wiki',
-            position: 'left'
-          },
           {
             to: 'donate',
             label: 'Donate',
@@ -89,6 +84,11 @@ const config = {
           {
             href: 'https://github.com/hackuarium',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://wiki.hackuarium.ch',
+            label: 'Wiki',
             position: 'right',
           },
         ],
