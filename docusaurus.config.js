@@ -66,14 +66,14 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            label: 'Projects',
+            to: 'events',
+            label: 'Events',
             position: 'left',
           },
           {
-            to: 'events',
-            label: 'Events',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            label: 'Projects',
             position: 'left',
           },
           {
