@@ -6,7 +6,7 @@ title: Donate to Hackuarium
 
 Hackuarium operating fees are significantly higher than the membership fees we collect. We rely on donations to enable us to remain independent while continuing to welcome everyone interested in biohacking, regardless of their own financial means.
 
-As an [officially recognized public utility association by the Canton de Vaud](HackuariumAttestationUtilitePublique.pdf), donations made to our association are tax deductible in Switzerland. We will happily provide you with donation certificates for tax purposes.
+As an [officially recognized public utility association by the Canton de Vaud](/HackuariumAttestationUtilitePublique.pdf), donations made to our association are tax deductible in Switzerland. We will happily provide you with donation certificates for tax purposes.
 
 Thank you for supporting us!
 
