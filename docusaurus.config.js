@@ -82,6 +82,11 @@ const config = {
              position: 'left',
           },
           {
+            to: 'press-coverage',
+            label: 'Press coverage',
+            position: 'left',
+          },
+          {
             to: 'donate',
             label: 'Donate',
             position: 'left',
