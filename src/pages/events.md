@@ -1,3 +1,9 @@
+---
+title: Hackuarium events
+---
+
+Our laborary is open to the general public every Wednesday 19:00, @ [Route de Crochy 20, 1024 Ecublens](https://maps.app.goo.gl/JSQ9Q8ZxZJb1jnR19).
+
 ## Upcoming events
 
 Unless otherwise states, all our events are free and open to everyone, including non-members.
