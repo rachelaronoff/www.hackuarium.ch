@@ -72,7 +72,7 @@ const config = {
             label: 'Projects',
           },
           {
-             to: 'https://docs.google.com/forms/d/e/1FAIpQLSdoyS8HmsuZACYp-q79pLzxR9BPA60HbyL6ZR8x7h7x3eqbhQ/viewform',
+             to: 'https://docs.google.com/forms/d/e/1FAIpQLSe225AWDuI2KXi3Aeamvj-WYudjtg6PvGC9Yx1whdFwsuucrA/viewform',
              label: 'Join',
              position: 'left',
           },
