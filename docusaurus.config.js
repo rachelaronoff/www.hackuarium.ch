@@ -72,6 +72,11 @@ const config = {
             position: 'left',
           },
           {
+            to: 'events',
+            label: 'Events',
+            position: 'left',
+          },
+          {
              to: 'https://docs.google.com/forms/d/e/1FAIpQLSe225AWDuI2KXi3Aeamvj-WYudjtg6PvGC9Yx1whdFwsuucrA/viewform',
              label: 'Join',
              position: 'left',
